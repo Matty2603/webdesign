@@ -1,0 +1,16 @@
+
+  <!ELEMENT kundenliste (kunde+)>
+  <!ELEMENT kunde (vorname, nachname, alter, adresse)>
+  <!ELEMENT vorname (#PCDATA)>
+  <!ELEMENT nachname (#PCDATA)>
+  <!ELEMENT alter (#PCDATA)>
+  <!ELEMENT adresse (strasse, postleitzahl, ort, bundesland)>
+  <!ELEMENT strasse (#PCDATA)>
+  <!ELEMENT postleitzahl (#PCDATA)>
+  <!ELEMENT ort (#PCDATA)>
+  <!ELEMENT bundesland (#PCDATA)>
+
+  <!ATTLIST kunde
+    kundenart (Kunde|Neukunde|Stammkunde) #REQUIRED
+    geschlecht (Frau|Mann|Inter) #REQUIRED> <!-- IMPLIED FIXED-->
+  <!ATTLIST adresse adressart (Privatadresse|Geschäftsadresse|Rechnungsadresse|Lieferadresse) #REQUIRED><!--IMPLIED FIXED-->

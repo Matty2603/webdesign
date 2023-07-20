@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema targetNamespace="http://a.org/kundenliste.xsd"
+    elementFormDefault="qualified"
+    xmlns="http://a.org/kundenliste.xsd"
+    xmlns:mstns="http://a.org/kundenliste.xsd"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+>
+
+  <xs:element name="kundenliste">
+    <xs:complexType>
+       <xs:sequence>
+         <xs:element name="kunde" maxOccurs="unbounded" type="kdnTyp"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="kdnTyp">
+    <xs:sequence>
+      <xs:element name="vorname" type="xs:string" maxOccurs="2" />
+      <xs:element name="nachname" type="xs:string" />
+      <xs:element name="alter" type="altersTyp" />
+      <xs:element name="adresse" type="adressTyp" maxOccurs="4" />
+    </xs:sequence>
+    <xs:attribute name="geschlecht" type="TypGeschlecht" use="required" />
+    <xs:attribute name="kundennummer" type="TypKdNr" use="required" />
+  </xs:complexType>
+  
+</xs:schema>

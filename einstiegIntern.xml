@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE kundenliste
+[
+<!-- Kommentar -->
+  <!-- 
+    + => 1 bis n-mal
+    ? => 0 bis 1-mal
+    * => 0 bis n-mal
+  -->  
+  
+  <!ELEMENT kundenliste (kunde+)>
+  <!ELEMENT kunde (vorname, nachname, alter, adresse)>
+  <!ELEMENT vorname (#PCDATA)>
+  <!ELEMENT nachname (#PCDATA)>
+  <!ELEMENT alter (#PCDATA)>
+  <!ELEMENT adresse (strasse, postleitzahl, ort, bundesland)>
+  <!ELEMENT strasse (#PCDATA)>
+  <!ELEMENT postleitzahl (#PCDATA)>
+  <!ELEMENT ort (#PCDATA)>
+  <!ELEMENT bundesland (#PCDATA)>
+
+  <!ATTLIST kunde
+    kundenart (Kunde|Neukunde|Stammkunde) #REQUIRED
+    geschlecht (Frau|Mann|Inter) #REQUIRED> <!-- IMPLIED FIXED-->
+  <!ATTLIST adresse adressart (Privatadresse|Geschäftsadresse|Rechnungsadresse|Lieferadresse) #REQUIRED><!--IMPLIED FIXED-->
+  
+
+]>
+
+<kundenliste>
+  <kunde geschlecht="Mann" kundenart="Kunde">
+    <vorname></vorname>
+    <nachname></nachname>
+    <alter></alter>
+    <adresse adressart="Privat">
+      <strasse></strasse>
+      <postleitzahl></postleitzahl>
+      <ort></ort>
+      <bundesland></bundesland>
+    </adresse>
+  </kunde>
+  
+</kundenliste>

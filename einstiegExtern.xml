@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE kundenliste SYSTEM "I:\beProductive\webDesign\xml\kundenliste.dtd">
+<kundenliste>
+  <kunde kundenart="Kunde" geschlecht="Frau">
+    <vorname>string</vorname>
+    <nachname>string</nachname>
+    <alter>string</alter>
+    <adresse adressart="Privatadresse">
+      <strasse>string</strasse>
+      <postleitzahl>string</postleitzahl>
+      <ort>string</ort>
+      <bundesland>string</bundesland>
+    </adresse>
+  </kunde>
+</kundenliste>
