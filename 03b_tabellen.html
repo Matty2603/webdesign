@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML-Tabellen Übung 1</title>
+    <style>
+        table, th, td {
+            border: 1px solid maroon;
+            border-collapse: collapse;
+            padding: 50px;
+        }
+
+        th {
+            width: 100px;
+        }
+
+        .ooe { list-style-image: url(../img/Wappen_Oberösterreich_Mini.png);}
+        .noe { list-style-image: url(../img/Wappen_Niederösterreich_Mini.png);}
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Bundesland</th>
+            <th>Viertel</th>
+            <th>Wappen</th>
+        </tr>
+        <tr>
+            <td>Oberösterreich</td>
+            <td>
+                <ul class="ooe">
+                    <li>Innviertel</li>
+                    <li>Mühlviertel</li>
+                    <li>Hausruckviertel</li>
+                    <li>Traunviertel</li>
+                </ul>
+            </td>
+            <td>
+                <a href="https://de.wikipedia.org/wiki/Ober%C3%B6sterreich" target="_blank"><img src="../img/Wappen_Oberösterreich.png" alt=""></a>
+            </td>
+        </tr>
+        <tr>
+            <td>Niederösterreich</td>
+            <td>
+                <ul class="noe">
+                    <li>Mostviertel</li>
+                    <li>Waldviertel</li>
+                    <li>Industrieviertel</li>
+                    <li>Weinviertel</li>
+                </ul>
+            </td>
+            <td>
+                <a href="https://de.wikipedia.org/wiki/Nieder%C3%B6sterreich" target="_blank"><img src="../img/Wappen_Niederösterreich.png" alt=""></a>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

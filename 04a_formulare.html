@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML-Formulare</title>
+</head>
+<body>
+    <h1 title="Matija Medjakovic">Formulare</h1>
+    <form action="">
+        <!-- fieldset => Gruppierung des Formulars -->
+        <fieldset>
+            <legend>Personendaten</legend>
+            <table>
+                <tr>
+                    <td>Name</td>
+                    <td>
+                        <!-- 
+                            name => Universalattribut
+                            title => Universalattribut
+                            size => Elementgrösse
+                            maxlength => maximale Anzahl von Zeichen
+                            disabled => Feld kann ausgewählt werden / Feld kann kopiert werden
+                            placeholder => Text welcher bis zur Eingabe im Feld steht
+                            value => vordefinierter Wert
+                            required => Pflichteingabefeld
+                            tabindex => Reihenfolge in welcher die Felder ausgewählt werden
+                            readonly => Feld kann ausgewählt werden, jedoch kann nicht eingegeben werden
+                         -->
+                         <input type="text" name="Name" id="Name" placeholder="Vor- und Nachname">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Geschlecht</td>
+                    <td>
+                        <!-- Radiobuttons werden durch das name-Attribut gruppiert, damit nur noch 1 Button gewählt werden kann
+                        checked = Vorauswahl
+                        -->
+                        <input type="radio" name="Geschlecht" id="Mann"><label for="Mann">Mann</label>
+                        <input type="radio" name="Geschlecht" id="Frau"><label for="Frau">Frau</label>
+                        <input type="radio" name="Geschlecht" id="Inter"><label for="Inter">Inter</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Kontakt</td>
+                    <td>
+                    <input type="checkbox" name="Kontakt" id="Mail" checked><label for="Mail">Mail</label>
+                    <input type="checkbox" name="Kontakt" id="Post"><label for="Post">Post</label>
+                    <input type="checkbox" name="Kontakt" id="Fax"><label for="Fax">Fax</label>
+                    <input type="checkbox" name="Kontakt" id="SMS"><label for="SMS">SMS</label>
+                    <input type="checkbox" name="Kontakt" id="Telefon"><label for="Telefon">Telefon</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Geburtsdatum</td>
+                    <td>
+                        <!-- 
+                            min => frühestes Datum
+                            max => spätestes Datum
+                         -->
+                         <input type="date" name="Geburtsdatum" id="Geburtsdatum" min="1970-01-01" max="2023-05-29">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Kalenderwoche</td>
+                    <td><input type="week" name="" id=""></td>
+                </tr>
+
+                <tr>
+                    <td>Monat</td>
+                    <td><input type="month" name="" id=""></td>
+                </tr>
+
+                <tr>
+                    <td>Uhrzeit</td>
+                    <td><input type="time" name="" id=""></td>
+                </tr>
+
+                <tr>
+                    <td>Zahl</td>
+                    <td>
+                        <!-- 
+                            min => kleinste Zahl
+                            max => grösste Zahl
+                            step => Schrittweite
+                         -->
+                         <input type="number" name="Zahl" id="Zahl" min="0" max="100" step="5">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Webseite</td>
+                    <td><input type="url" name="Webseite" id="Webseite"></td>
+                </tr>
+
+                <tr>
+                    <td>E-Mail</td>
+                    <td><input type="email" name="E-Mail" id="E-Mail"></td>
+                </tr>
+
+                <tr>
+                    <td>Kennwort</td>
+                    <td><input type="password" name="Kennwort" id="Kennwort"></td>
+                </tr>
+
+                <tr>
+                    <td>Foto</td>
+                    <td><input type="file" name="Foto" id="Foto"></td>
+                </tr>
+
+                <tr>
+                    <td>Lebenslauf</td>
+                    <td>
+                        <!-- multiple => mehrere Dateien können hochgeladen werden -->
+                        <input type="file" name="Lebenslauf" id="Lebenslauf" multiple>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Farbe</td>
+                    <td><input type="color" name="Farbe" id="Farbe"></td>
+                </tr>
+
+                <tr>
+                    <td>Telefonnummer</td>
+                    <td><input type="tel" name="Telefonnummer" id="Telefonnummer"></td>
+                </tr>
+
+                <tr>
+                    <td>Bundesland</td>
+                    <td>
+                        <select name="Bundesland" id="Bundesland">
+                            <option value="W">Wien</option>
+                            <option value="N">Niederösterreich</option>
+                            <option value="St">Steiermark</option>
+                            <option value="K">Kärnten</option>
+                            <option value="B">Burgenland</option>
+                            <option value="S">Salzburg</option>
+                            <option value="T">Tirol</option>
+                            <option value="V">Vorarlberg</option>
+                            <option value="O">Oberösterreich</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Kurse</td>
+                    <td>
+                        <select name="Kurse" id="Kurse">
+                            <optgroup label="Applikationsentwickler">
+                                <option value="Java">Java</option>
+                                <option value="Webdesign">Webdesign</option>
+                                <option value="Datenorganisation">Datenorganisation</option>
+                            </optgroup>
+                            <optgroup label="Techniker">
+                                <option value="Systemtechnik">Systemtechnik</option>
+                                <option value="Netzwerktechnik">Netzwerktechnik</option>
+                                <option value="UWWI">Und wos was i</option>
+                            </optgroup>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Städte</td>
+                    <td>
+                        <input type="text" list="Städte">
+                        <datalist id="Städte">
+                            <option value="Salzburg">
+                            <option value="Wien">
+                            <option value="Linz">
+                            <option value="Graz">
+                            <option value="Kapfenberg">
+                            <option value="Kindberg">
+                            <option value="Bludenz">
+                            <option value="Bregenz">
+                            <option value="Wels">
+                            <option value="Baden">
+                            <option value="Wolfsberg">
+                            <option value="Fugging">
+                            <option value="Uttendorf">
+                        </datalist>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Kommentar</td>
+                    <td>
+                        <textarea name="Kommentar" id="Kommentar" cols="30" rows="10">
+                            Geben Sie hier Ihren Kommentar ein:
+                        </textarea>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <br>
+
+        <button type="submit">Absenden</button>
+        <button type="reset">Löschen</button>
+        <br><br>
+
+        <input type="submit" value="Absenden">
+        <input type="reset" value="Löschen">
+        <br><br>
+
+        <input type="image" src="../img/sonne.gif" alt="Das Lachen der warmen Sonnenstrahlen">
+    </form>
+</body>
+</html>
