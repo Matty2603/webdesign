@@ -1,0 +1,12 @@
+Better Comments (Aaron Bond)
+CodeSnap-K.O. (Kareem Osama)
+CodeSnap-luo (luo)
+Color the tag name (jzmstrjp)
+Debugger for Firefox (Firefox DevTools)
+German Language Pack for Visual Studio Code (Microsoft)
+indent-rainbow (oderwat)
+Live Server (Ritwick Dey)
+Microsoft Edge Tools for VS Code (Microsoft)
+vscode-icons (VSCode Icons Team)
+
+? Path intellisense (Part of VSC Essentials)

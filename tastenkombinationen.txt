@@ -1,0 +1,30 @@
+STRG + C => Kopieren
+STRG + X => Ausschneiden
+STRG + V => Einfügen
+STRG + A => Alles Auswählen
+STRG + F => Suchen
+STRG + H => Suchen und Ersetzen
+STRG + S => Speichern
+STRG + SHIFT + S => Speichern unter
+STRG + Z => Rückgängig
+STRG + Y => Wiederholen
+
+STRG + Backspace => Wortweise löschen
+
+VS-Code Tastenkombinationen
+! + Enter => Einfügen des HTML-Grundgerüstes
+ALT + SHIFT + Pfeil nach unten => Zeilen nach unten duplizieren
+STRG + K + T => Design auswählen
+STRG + #  => Kommentar einfügen
+STRG + B => Explorer ein/ausblenden
+
+ALT + Pfeil oben bzw. Pfeil unten => verschiebt die Zeile nach oben bzw. unten
+STRG + Pfeil links bzw. rechts => Wortweise im Text nach links bzw. rechts springen
+STRG + SHIFT + Pfeil links bzw. rechts => Wortweise Text nach links bzw. rechts markieren
+
+Ende-Taste => Cursor springt ans Ende der Zeile
+Pos1-Taste => Cursor springt an Anfang der Zeile
+Ende + Shift => markiert die gesamte Zeile nach rechts ab Cursor-Position
+Pos1 + Shift => markiert die gesamte Zeile nach links ab Cursor-Position
+STRG + D => markiert das nächste Vorkommen des markierten Textes
+STRG + SHIFT + L => markiert sämtliche Vorkommen des markierten Textes

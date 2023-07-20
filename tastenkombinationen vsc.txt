@@ -1,0 +1,31 @@
+Alles auswählen => STRG + A
+
+Auswahl kopieren => STRG + C
+
+Auswahl ausschneiden => STRG + X
+
+Kopie/Ausschnitt einfügen => STRG + V
+
+
+Kommentar einfügen => STRG + #
+
+
+Letzten Schritt wiederholen => STRG + Y
+
+Letzten Schritt rückgängig => STRG + Z
+
+
+Wortweises löschen => STRG + Backspace
+
+
+Zeile verschieben => ALT + Pfeiltaste nach unten/oben
+
+Zeile duplizieren => im Element ALT + SHIFT + Pfeiltaste nach unten/oben
+
+
+
+
+
+
+
+

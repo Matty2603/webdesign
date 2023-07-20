@@ -1,0 +1,242 @@
+Kapitel 1 - Aufgabe
+
+- Erstelle eine Seite
+- Speichere die Seite als index.html ab
+- Die Seite sollen beinhalten:
+- Meta-Angaben
+- Titel (steht dein Name)
+- relative und absolute Links
+- Sprungziele
+- diverse Character Entities
+- unterschiedliche Überschriften
+- Mehrere Bilder
+
+Kapitel 3 - Aufgabe
+
+- Erstelle mehrere Seiten
+
+- Die Seiten sollen beinhalten:
+
+- Titel (steht dein Name)
+- Verlinkungen zu anderen Seiten
+- unterschiedliche Überschriften
+- Mehrere Bilder
+
+Eine Seite soll nur mit inline Styling gestylt werden.
+
+Eine Seite soll nur mit einem externen Stylesheet gestylt werden.
+
+Im externen Stylesheet soll:
+
+- Min. eine Stylinganweisung soll sich nur auf Tags beziehen
+- Min. eine Stylinganweisung soll sich nur auf IDs beziehen
+- Min. eine Stylinganweisung soll sich nur auf Klassen beziehen
+- Min. eine Stylinganweisung soll nach mehreren Klassen selektieren
+- Min. eine Stylinganweisung soll nach kombinierten Klassen selektieren
+
+Stylinganweisung die in verschiedenen Kombinationen verwendet werden müssen:
+
+- Hintergrund Bild
+- Fixierung des Hintergrundbildes
+- Wiederholung eines hintergrundbildes
+- Positionierung eines hintergrundbildes
+- Hintergrundbild mit fixer Größe
+- Hintergrundbild mit variabler Größe
+- Hintergrundfarbe mit Transparents
+- Hintergrundfarbe im RGB Modus
+- Mindestens ein Bild transparent machen
+
+Kapitel 4 - Aufgabe
+
+- Erstelle mehrere Seiten
+
+- Die Seiten sollen beinhalten:
+
+- Titel (steht dein Name)
+- Verlinkungen zu anderen Seiten
+- unterschiedliche Überschriften
+- Mehrere Bilder
+- Hintergrundbilder
+- Fließtext mit Zeilenumbrüchen
+
+Benutze für das Styling nur noch dein externes Stylesheet.
+Kein Inlinestyling mehr!!
+
+Im externen Stylesheet soll:
+
+- Min. eine Stylinganweisung soll sich nur auf Tags beziehen
+- Min. eine Stylinganweisung soll sich nur auf IDs beziehen
+- Min. eine Stylinganweisung soll sich nur auf Klassen beziehen
+- Min. eine Stylinganweisung soll nach mehreren Klassen selektieren
+- Min. eine Stylinganweisung soll nach kombinierten Klassen selektieren
+
+Stylinganweisung die in verschiedenen Kombinationen verwendet werden müssen:
+
+- CSS Anweisungen um die Hintergrundbild zu stylen
+- Verschiedene Schriftfamilien (bediene dich hier bei Google Fonts)
+- Verschiedene Schriftgrößen
+- Verschiedene Formatierungen bei den Schriften
+
+Kapitel 5 - Aufgabe
+
+Erstelle mehrere Seiten zum Thema Reisen
+
+Die Seiten sollen beinhalten:
+
+- Titel (steht dein Name)
+- Verlinkungen zu anderen Seiten
+- unterschiedliche Überschriften
+- Mehrere Bilder
+- Hintergrundbilder
+- Tabellen
+- Sortierte Listen
+- Unsortierte Listen
+- Definitionslisten
+- Tabellen
+- Links
+
+Benutze für das Styling nur noch dein externes Stylesheet.
+Kein Inlinestyling mehr!!
+
+Stylinganweisung die in verschiedenen Kombinationen verwendet werden müssen:
+
+- CSS Anweisungen um die Hintergrundbild zu stylen
+- Verschiedene Schriftfamilien (bediene dich hier bei Google Fonts)
+- Links die mit Pseudoklassen verändert werden
+- Tabellen gestylt mit Pseudoklassen
+- Unterschiedlich gestylte Listen
+
+Kapitel 6 - Aufgabe
+
+- Arbeite bei deiner Webseite zum Thema Reisen weiter
+- Benutze HTML5 Elemente für eine korrekte semantische Auszeichnung
+
+Die Seiten sollen beinhalten:
+
+- Titel (steht dein Name)
+- Formular mit allen Elementen die du kennen gelernt hast
+- Achte auf die Verbindung von label und for
+- Benutze für das Styling nur noch dein externes Stylesheet.
+
+Kein Inlinestyling mehr!!
+
+Stylinganweisung die in verschiedenen Kombinationen verwendet werden müssen:
+
+- Style das Formular!
+
+Kapitel 7 - Aufgabe
+
+Arbeite bei deiner Webseite zum Thema Reisen weiter
+
+Die Seiten sollen beinhalten:
+
+- Titel (steht dein Name)
+- Inline Elemente
+- Block Elemente
+- Block Elemente die sich wie Inline Elemente verhalten
+- Inline Elemente die sich wie Block Elemente verhalten
+- Inline-Block Elemente
+
+- Positioniere zwei Paragraphen nebeneinander
+- Füge Abstände hinzu
+- Benutze HTML5 Elemente für eine korrekte semantische Auszeichnung
+
+- Benutze für das Styling nur noch dein externes Stylesheet. Kein Inlinestyling mehr!!
+
+Stylinganweisung die in verschiedenen Kombinationen verwendet werden müssen:
+
+- overflow
+- z-index
+- Arbeite die CSS Anweisungen von Folie 13 ein in  verschiedenen Formen
+- Arbeite die CSS Anweisungen von Folie 14 ein in verschiedenen Formen
+
+Kapitel 8 - Aufgabe
+
+Arbeite bei deiner Webseite zum Thema Reisen weiter
+
+Die Seiten sollen beinhalten:
+
+- Titel (steht dein Name)
+- Baue eine Navigation mit Verlinkungen zu anderen Seiten 
+- Baue eine zweite Navigation mit Sprungzielen 
+- unterschiedliche Überschriften
+- Mehrere Bilder
+- Hintergrundbilder
+
+Benutze für das Styling nur noch dein externes Stylesheet.
+Kein Inlinestyling mehr!!
+
+Achte auf eine richtige Ordnerstruktur!
+
+Stylinganweisung die in verschiedenen Kombinationen verwendet werden müssen:
+
+CSS Anweisungen um die Hintergrundbild zu stylen
+Verschiedene Schriftfamilien (bediene dich hier bei Google Fonts)
+Links die mit Pseudoklassen verändert werden
+Unterschiedlich gestylte Listen
+
+Kapitel 9 - Aufgabe
+
+Arbeite bei deiner Webseite zum Thema Reisen weiter
+
+Die Seiten sollen beinhalten:
+
+- CSS3 Spielereien
+
+Benutze für das Styling nur noch dein externes Stylesheet.
+Kein Inlinestyling mehr!!
+
+Stylinganweisung die in verschiedenen Kombinationen verwendet werden müssen:
+
+- CSS Anweisungen um die Hintergrundbild zu stylen
+- Verschiedene Schriftfamilien (bediene dich hier bei Google Fonts)
+- CSS3 Anweisungen
+
+Kapitel 10 - Aufgabe
+
+Arbeite bei deiner Webseite zum Thema Reisen weiter
+
+Benutze HTML5 Elemente für eine korrekte semantische Auszeichnung
+
+Versuche folgendes Layout nachzubauen:
+https://rebecca-rottensteiner.at/example/index.html
+
+Benutze für das Styling nur noch dein externes Stylesheet.
+Kein Inlinestyling mehr!!
+
+Stylinganweisung die in verschiedenen Kombinationen verwendet werden müssen:
+
+- Arbeite mit Flexboxen um Elemente nebeneinander zu positionieren
+
+Kapitel 11 - Aufgabe
+
+Erstelle eine Singlepage. Thema: stelle ein Tier deiner Wahl vor.
+
+Erstelle dazu drei Themenbereich (z.B.: Lebensraum, Nahrung,  sonstige Informationen)
+
+- Arbeite mit den verschiedenen Queries um die Seite responsive zu gestalten.
+- Der Inhalt der Seite soll immer vollständig am Screen zu sehen sein.
+
+Kapitel 12 - Aufgabe
+ 
+- Binde die CDN Links von Bootstrap in deine neue Seite ein.
+- Erstelle eine Webseite mit 2 Unterseiten zum Thema Spiele rein nur mit Bootstrap Klassen.
+
+Nutze dazu folgende Elemente von Bootstrap
+
+• https://getbootstrap.com/docs/4.4/components/card/#card-columns
+• https://getbootstrap.com/docs/4.4/components/carousel/#with-controls
+• https://getbootstrap.com/docs/4.4/components/collapse/
+• https://getbootstrap.com/docs/4.4/components/forms/
+• https://getbootstrap.com/docs/4.4/components/modal/
+• https://getbootstrap.com/docs/4.4/components/navs/
+• https://getbootstrap.com/docs/4.4/components/progress/
+
+Nutze folgende Stylingmöglichkeiten
+
+• https://getbootstrap.com/docs/4.4/utilities/borders/
+• https://getbootstrap.com/docs/4.4/utilities/spacing/
+• https://getbootstrap.com/docs/4.4/utilities/shadows/
+• https://getbootstrap.com/docs/4.4/layout/grid/
+• Schau ob du noch weitere Elemente von Bootstrap findest die du sinnvoll in deine Seite einbauen kannst.
+• Du darfst kein eigenes Styling benutzen
