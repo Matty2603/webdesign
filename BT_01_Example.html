@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    .container{
+        width: 800px;
+        height: 900px;
+        background-color:bisque;
+        border:1px solid black;
+    }
+    .box {
+        width: 100px;
+        height: 100px;
+        position: relative;
+        animation:zorro 5s alternate infinite;
+        animation:color 2s alternate infinite;
+        
+    }
+    /* @keyframes zorro{  
+        0%{left:0px; top:0px;}
+        33%{left: 698px; top:0px;}
+        63%{left: 0px; top:798px;}
+        100%{left: 698px; top:798px;}
+    }*/
+
+  @keyframes color {
+    0%{background-color: red;}
+    14%{background-color: orange;}
+    28%{background-color: yellow;}
+    43%{background-color: green;}
+    57%{background-color: blue;}
+    71%{background-color: indigo;}
+    86%{background-color: violet;}
+  }
+  </style> 
+  
+</head>
+<body>
+  
+<div class="container">
+    <div class="box"></div>
+</div>
+
+</body>
+</html>
