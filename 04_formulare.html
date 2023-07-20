@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulare</title>
+</head>
+
+<body>
+
+    <h1>Formulare</h1>
+
+    <!-- 
+        id          =>  darf im gesamten Text nur einmal vorkommen
+        placeholder =>  Platzhalter für Eingaben
+        name        =>  Universalattribut
+        size        =>  Elementgröße
+        maxlength   =>  maximale Anzahl von Zeichen, welche eingegeben werden können
+        value       =>  vordefinierter Wert
+        required    =>  Pflichteingabefeld
+        readonly    =>  Feld kann markiert und kopiert werden, es kann jedoch nicht eingegeben oder verändert werden
+        disabled    =>  Feld kann nicht markiert und/oder kopiert werden
+        tabindex    =>  legt die Reihenfolge fest, in welcher die einzelnen Felder mittels TAB angesprungen werden
+    -->
+
+    <!-- 
+        form>table>tr>td{Name}+td>input#fName 
+    -->
+
+    <form>
+        <table>
+            
+            <tr>
+                <td>Vorname</td>
+                <td><input type="text" id="Vname"></td>
+            </tr>
+
+            <tr>
+                <td>Familienname</td>
+                <td><input type="text" id="Fname"></td>
+            </tr>
+
+            <!-- 
+                tr>td{Geschlecht}+td(input:radio+label)*3
+            -->
+
+            <!-- 
+            Bei Radiobuttons darf immer nur 1 Radiobutton auswählbar sein.
+
+            name        =>  Radiobuttons werden gruppiert, sodass immer nur 1 Radiobutton ausgewählt werden kann
+            checked     =>  mit checked wird eine Vorauswahl getroffen, welche vom Benutzer geändert werden kann
+            disabled    =>  Radiobutton ist deaktiviert, wird ausgegraut dargestellt und kann nicht ausgewählt werden
+            value       =>  Wert, welcher übermittelt wird
+            -->
+
+            <tr>
+                <td>Geschlecht</td>
+
+                <!-- 
+                    for     =>  Groß-/Kleinschreibung muss beachtet werden (case-sensitive); for-Wert bezieht sich auf die id des inputs
+                -->
+                
+                <td><input type="radio" name="Geschlecht" id="Mann">
+                <label for="Mann">Mann</label>
+                
+                <input type="radio" name="Geschlecht" id="Frau" checked>
+                <label for="Frau">Frau</label>
+                
+                <input type="radio" name="Geschlecht" id="Inter">
+                <label for="Inter">Inter</label></td>
+            </tr>
+
+            <!-- 
+                tr>td{Kontakt}+td>(input:checkbox[name=kontakt]+label)*4 
+            -->
+
+            <tr>
+                <td>Kontakt</td>
+                <td>
+                <input type="checkbox" name="kontakt" id="Post">
+                <label for="Post">Post</label>
+                <input type="checkbox" name="kontakt" id="Email">
+                <label for="Email">Email</label>
+                <input type="checkbox" name="kontakt" id="Fax">
+                <label for="Fax">Fax</label>
+                <input type="checkbox" name="kontakt" id="SMS">
+                <label for="SMS">SMS</label>
+                </td>
+            </tr>
+
+            <!-- 
+                tr>td{Bundesland}+td>select#Bundesland[name=Bundesland][size=5]>option*9 
+            -->
+
+            <!-- size       =>  Anzahl der sichtbaren Einträge -->
+            <!-- multiple   =>  Mehrfachauswahl mittels gedrückter STRG-Taste möglich -->
+
+            <tr>
+                <td>Bundesland</td>
+                <td>
+                    <select name="Bundesland" id="Bundesland" size="5">
+                        <option value="W">Wien</option>
+                        <option value="N">Niederösterreich</option>
+                        <option value="O">Oberösterreich</option>
+                        <option value="S">Salzburg</option>
+                        <option value="T">Tirol</option>
+                        <option value="V">Vorarlberg</option>
+                        <option value="B">Burgenland</option>
+                        <option value="K">Kärnten</option>
+                        <option value="St">Steiermark</option>
+                    </select>
+                </td>
+            </tr>
+
+            <!-- 
+                tr>td{Klasse}+td>select>(optgroup[label=""]>option*5)*2 
+            -->
+
+            <tr>
+                <td>Klasse</td>
+                <td>
+                    <select name="Klasse" id="Klasse">
+                        <optgroup label="Applikationsentwickler">
+                            <option value="AP10">IT-AP10</option>
+                            <option value="AP11">IT-AP11</option>
+                            <option value="AP12">IT-AP12</option>
+                            <option value="AP13">IT-AP13</option>
+                            <option value="AP14">IT-AP14</option>
+                        </optgroup>
+                        <optgroup label="Systemtechniker">
+                            <option value="ST10">IT-ST10</option>
+                            <option value="ST11">IT-ST11</option>
+                            <option value="ST12">IT-ST12</option>
+                            <option value="ST13">IT-ST13</option>
+                            <option value="ST14">IT-ST14</option>
+                        </optgroup>
+                    </select>
+                </td>
+            </tr>
+
+            <!-- 
+                tr>td{Städte}+td>input[list=staedte]+datalist#staedte 
+            -->
+            
+            <tr>
+                <td>Städte</td>
+                <td>
+                    <input type="text" list="staedte">
+                    <datalist id="staedte">
+                        <option value="Salzburg"></option>
+                        <option value="Wien"></option>
+                        <option value="Linz"></option>
+                        <option value="Graz"></option>
+                        <option value="Bludenz"></option>
+                        <option value="Amstetten"></option>
+                        <option value="Bregenz"></option>
+                        <option value="Villach"></option>
+                        <option value="Kapfenberg"></option>
+                        <option value="Kindberg"></option>
+                    </datalist>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Lieblingsfarbe</td>
+                <td><input type="color" name="Farbe" id="Farbe"></td>
+            </tr>
+
+            <tr>
+                <td>Kennwort</td>
+                <td><input type="password" name="kw" id="kw"></td>
+            </tr>
+
+            <tr>
+                <td>Kennwort</td>
+                <td><input type="password" name="kw" id="kw"></td>
+            </tr>
+
+            <tr>
+                <td>Datei</td>
+                <td><input type="file" name="datei" id="datei" multiple></td>
+            </tr>
+
+            <tr>
+                <td>Email</td>
+                <td><input type="email" name="email" id="email"></td>
+            </tr>
+
+            <tr>
+                <td>Webseite</td>
+                <td><input type="url" name="web" id="web"></td>
+            </tr>
+
+            <tr>
+                <td>Telefon</td>
+                <td><input type="tel" name="handy" id="handy"></td>
+            </tr>
+
+            <tr>
+                <td>Zahl</td>
+                <td><input type="number" name="zahl" id="zahl" min="0" max="20" step="5"></td>
+            </tr>
+
+            <tr>
+                <td>Datum</td>
+                <td><input type="date" name="datum" id="datum" min="2020-01-01" max="2022-01-01"></td>
+            </tr>
+
+            <tr>
+                <td>Woche</td>
+                <td><input type="week" name="woche" id="woche"></td>
+            </tr>
+
+            <tr>
+                <td>Monat</td>
+                <td><input type="month" name="monat" id="monat"></td>
+            </tr>
+
+            <tr>
+                <td>Uhrzeit</td>
+                <td><input type="time" name="uhrzeit" id="uhrzeit"></td>
+            </tr>
+
+            <tr>
+                <td>Range</td>
+                <td><input type="range" min="0" max="100"></td>
+            </tr>
+
+            <tr>
+                <td>Kommentar</td>
+                <td><textarea name="" id="" cols="30" rows="10" placeholder="Hier Kommentar einfügen!"></textarea></td>
+            </tr>
+
+        </table>
+
+        <input type="submit" value="Absenden">
+        <input type="reset" value="Zurücksetzen">
+
+        <button type="submit">Schicken</button>
+        <button type="reset">Löschen</button><br>
+
+        <input type="image" src="../../../webDesign/img/img/sonne.gif" alt="Sonnenbild als SubmitButton">
+
+    </form>
+    
+</body>
+</html>

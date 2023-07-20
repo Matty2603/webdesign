@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Einstieg</title>
+</head>
+<body>
+    <!-- Dies ist ein Kommentar! -->
+
+    <!-- 
+        h1 bis h6 sind Überschriften
+        h1 => grösste Überschrift
+        h6 => kleinste Überschrift
+        Überschriften sind Blockelemente
+     -->
+     <h1>Einstieg in <span style="color: red;">HTML</span></h1>
+     <h2>Einstieg in HTML</h2>
+     <h3>Einstieg in HTML</h3>
+     <h4>Einstieg in HTML</h4>
+     <h5>Einstieg in HTML</h5>
+     <h6>Einstieg in HTML</h6>
+
+    <!-- hr => horizontale Linie -->
+    <hr>
+
+    <!-- p-Element => Paragraph = Absatz -->
+    <!-- p>lorem -->
+    <h2>Absatz</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus earum rerum eum autem illum impedit ad saepe a! Possimus alias quae, numquam fuga recusandae repellendus ex eveniet, expedita omnis necessitatibus error voluptatem eius magni provident! Vel voluptate illum natus, porro et, ad excepturi minima quos cumque quo soluta at harum?</p>
+
+    <h2>Hyperlinks</h2>
+    <!-- a-Element => Hyperlinks -->
+    <a href="tryout.html">zur Versuchsdatei im selben Verzeichnis (öffnet im selben Tab)</a>
+    <!-- br-Tag => fügt einen Zeilenumbruch ein -->
+    <br>
+    <a href="tryout.html" target="_blank">zur Versuchsdatei im selben Verzeichnis (öffnet im neuen Tab)</a>
+    <br>
+    <!-- Link zur Datei check.html im XML Ordner -->
+    <a href="../xml/check.html" target="_blank">Zur Check-HTML Date im XML-Ordner</a>
+    <br>
+    <!-- Hyperlink zur Seite der Stadt Wien -->
+    <a href="https://www.wien.gv.at/" target="_blank">Zur Webseite der Stadt Wien</a>
+    <br>
+
+    <h2>E-Mail</h2>
+    <!-- Hyperlink öffnet Standard-E-Mail-Programm -->
+    <a href="mailto:andreas.schinagl@gmail.com">Sende mir eine E-Mail</a>
+    <br>
+    <!-- E-Mail mit CC-Empfänger -->
+    <a href="mailto:andreas.schinagl@gmail.com?cc=max@muster.at">Sende mir und Max eine E-Mail</a>
+    <br>
+    <a href="mailto:andreas.schinagl@gmail.com?cc=max@muster.at&bcc=susi@muster.at">Sende mir, Max und Susi eine Email</a>
+    <br>
+    <!-- E-Mail mit Betreff-Angabe -->
+    <a href="mailto:andreas.schinagl@gmail.com?subject=Party">Partyeinladung</a>
+    <br>
+    <!-- E-Mail mit Betreff und Text -->
+    <a href="mailto:andreas.schinagl@gmail.com?subject=Party&body=Ich%20komme%20zur%20Party">Partyeinladung mit Text</a>
+
+    <h2>Links innerhalb der Seite</h2>
+    <a href="#unten" id="oben">Hier ist oben, ab nach Unten</a>
+    <hr>
+    <h2>Bilder</h2>
+    <!-- Einfaches Bild einbinden -->
+    <img src="../img/apfel.jpg" alt="Ein wunderschöner roter Apfel">
+    <br>
+
+    <!-- Bild mit Hyoerlink zu apple.at -->
+    <figure>
+        <a href="https://www.apple.com/at/" target="_blank"><img src="../img/apfel.jpg" alt="Ein wunderschöner roter Apfel"></a>
+        <figcaption>Hyperlink zu Apple.at</figcaption>
+    </figure>
+
+    <div style="margin-bottom: 5000px;"></div>
+
+    <a href="#oben" id="unten">Hier ist unten, ab nach Oben</a>
+    <div style="margin-bottom: 5000px;"></div>
+</body>
+</html>

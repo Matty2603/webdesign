@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML-Tabellen</title>
+    <style>
+        table, th, td {
+            border: 1px solid maroon;
+            border-collapse: collapse;
+            padding: 50px;
+        }
+        th {
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>Vorname</td>
+            <td>Nachname</td>
+            <td>NAUB</td>
+        </tr>
+        <tr>
+            <td>Wolfgang</td>
+            <td>Lipovsky</td>
+            <td>100€</td>
+        </tr>
+        <tr>
+            <td>Kai</td>
+            <td>Stüger</td>
+            <td>100€</td>
+        </tr>
+        <tr>
+            <td>Albert</td>
+            <td>Dudas</td>
+            <td>500€</td>
+        </tr>
+    </table>
+    <hr>
+
+    <h1>Logische Tabelle</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Vorname</th>
+                <th>Nachname</th>
+                <th>NAUB</th>
+                <th>Klasse</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Wolfgang</td>
+                <td>Lipovsky</td>
+                <td>100€</td>
+                <th rowspan="3">BT03</th>
+            </tr>
+            <tr>
+                <td>Kai</td>
+                <td>Stüger</td>
+                <td>100€</td>
+            </tr>
+            <tr>
+                <td>Albert</td>
+                <td>Dudas</td>
+                <td>500€</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Gesamt</td>
+                <td>700€</td>
+            </tr>
+        </tfoot>
+    </table>
+    <hr>
+
+    <table>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td rowspan="2" colspan="2" style="background-color: maroon;"><img src="../img/HTML5.png" alt="Das Logo von HTML 5"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+
+    <div style="margin-bottom: 5000px;"></div>
+</body>
+</html>
