@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/jsFormate.css">
+    <script src="../js/jsFunktionen.js"></script>
+    <script>
+    var zahl = 0;
+    fxAusgabe(zahl);
+    function fxPlus() {
+        zahl++;
+        fxAusgabe(zahl);
+
+    }
+    function fxMinus() {
+        zahl--;
+        fxAusgabe(zahl);
+    }
+    </script>
+</head>
+<body>
+    <div id="ausgabe1"></div>
+    <button onclick="fxPlus()">Plus</button>
+    <button onclick="fxMinus()">Minus</button>
+</body>
+</html>

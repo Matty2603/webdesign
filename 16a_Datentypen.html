@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/jsFormate.css">
+    <script src="../js/jsFunktionen.js"></script>
+
+    <script>
+        function fxDatentypen(){
+        var x;
+        ausgabe1.innerHTML=`Wert von x: ${x} Typ von x: ${typeof(x)}`;
+        x=1;
+        ausgabe2.innerHTML=`Wert von x: ${x} Typ von x: ${typeof(x)}`;
+        x="Matija";
+        ausgabe3.innerHTML=`Wert von x: ${x} Typ von x: ${typeof(x)}`;
+        x=true;
+        ausgabe4.innerHTML=`Wert von x: ${x} Typ von x: ${typeof(x)}`;
+        x={vorname:"Matija", nachname:"Medjakovic"}
+        ausgabe5.innerHTML=`Wert von x: ${x.vorname} Typ von x: ${typeof(x)}`;
+    }
+    </script>
+    
+</head>
+<body>
+    <div id="ausgabe1">Hier kommt die Ausgabe</div>
+    <div id="ausgabe2">Hier kommt die Ausgabe</div>
+    <div id="ausgabe3">Hier kommt die Ausgabe</div>
+    <div id="ausgabe4">Hier kommt die Ausgabe</div>
+    <div id="ausgabe5">Hier kommt die Ausgabe</div>
+    <button onclick="fxDatentypen()">Klick mich</button>
+</body>
+</html>

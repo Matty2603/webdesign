@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/jsFormate.css">
+    <style>
+        button {
+            margin: 10px 0px;
+        }
+    </style>
+    <script src="../js/jsFunktionen.js"></script>
+    <script>
+        function fxFrmTextAusgabe() {
+            // 1. Möglichkeit
+            // let vn=document.getElementById("txtBox1").value;
+
+            // 2. Möglichkeit
+            // let vn=document.daten.txtBox1.value;
+
+            // 3. Möglichkeit
+            // let vn=document.daten.elements[0].value;
+
+            // let eingaben="";
+            // var d=document.forms[1];
+
+            // for(let i=0; i< d.length; i++) {
+            //     eingaben+=d.elements[i].id + ": " + d.elements[i].value + "<br>"; 
+            // }
+            // fxAusgabe(eingaben);
+
+            // 5.Möglichkeit
+            // fxAusgabe('
+            // ${Vorname.id}: ${Vorname.value} <br>
+            // ${Nachname.id}: ${Nachname.value} <br>
+            // ${Strasse.id}: ${Strasse.value} <br>
+            // ${PLZ.id}: ${PLZ.value} <br>
+            // ${Ort.id}: ${Ort.value} <br>'
+            // );
+
+            // "+" ist ein Verkettungsoperator
+            fxAusgabe(document.forms[0].elements[0].value + document.forms[0].elements[1].value);
+            fxAusgabe(z1.value + z2.value);
+
+            // parseInt versucht die Eingabe in eine Zahl umzuwandeln (number)
+            // sollte ein text eingegeben worden sein, wird NaN (Not a Number) ausgegeben
+            // "+" ist ein arithmetischer Operator
+            // fxAusgabe(parseInt(z1.value) + parseInt(z2.value));
+        }
+    </script>
+</head>
+<body>
+    <form name="daten">
+        <input type="text" id="z1" placeholder="1. Bitte um Eingabe"><br>
+        <input type="text" id="z2" placeholder="2. Bitte um Eingabe">
+    </form>
+    <form name="daten">
+        <input type="text" id="Vorname" placeholder="Vorname"><br>
+        <input type="text" id="Nachname" placeholder="Nachname"><br>
+        <input type="text" id="Strasse" placeholder="Strasse"><br>
+        <input type="text" id="PLZ" placeholder="PLZ"><br>
+        <input type="text" id="Ort" placeholder="Ort"><br>
+
+    </form>
+    <button onclick="fxFrmTextAusgabe()">Ausgeben</button>
+    <div id="ausgabe1">Hier kommt die Ausgabe</div>
+</body>
+</html>

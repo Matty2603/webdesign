@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/jsFormate.css">
+    <script src="../js/jsFunktionen.js"></script>
+    <script>
+        function Umfang() {
+            ausgabe1.innerHTML = (2*Number(zahl_1.value)) + (2*Number(zahl_2.value))
+        }
+
+        function Fläche() {
+            ausgabe1.innerHTML = Number(zahl_1.value) * Number(zahl_2.value)
+        }
+
+        // function fxBerechnen() {
+        //     var l=Number(zahl_1.value);
+        //     var b=Number(zahl_2.value);
+
+        //     if(l==b){
+        //         ausgabe1.innerHTML=`Es ist ein Quadrat<br>Fläche: ${l*b}<br>Umfang:${l*4}`;
+        //     }
+        //     else if {
+        //         ausgabe1.innerHTML=("Es ist ein Rechteck<br>Fläche:" ${(l*b)}<br>Umfang:${(l+b)*2}")
+        //     }
+
+    </script>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Geben Sie bitte zwei Zahlen ein:</legend>
+        <table>
+            <tr><input type="text" id="zahl_1"><br></tr>
+            <tr><input type="text" id="zahl_2"></tr>
+        </table>
+        </fieldset>
+        <br>
+    </form>
+    <div id="ausgabe1"></div>
+    <button onclick="Umfang()">Umfang</button>
+    <button onclick="Fläche()">Fläche</button>
+    <!-- <button onclick="fxBerechnen()">Gesamtbericht</button> -->
+</body>
+</html>

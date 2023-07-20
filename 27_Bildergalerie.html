@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style type="text/css">
+        #bildbeschreibung {
+            height: 50px;
+            margin-top: 20px;
+            text-align: center;
+            color: maroon;
+        }
+
+        #buttons {
+            width: 100%;
+            text-align: center
+        }
+
+        #bildanzeige {
+            width: 820px;
+            text-align: center;
+            border: 10px solid maroon;
+            margin: auto
+        }
+
+        .container {
+            width: 1000px;
+            margin: auto;
+            padding: 50px;
+            background-color: gold;
+            border: 15px solid maroon;
+        }
+
+        input {
+            background-color: maroon;
+            padding: 10px;
+            font: bold 16pt verdana;
+            color: gold;
+            width: 220px
+        }
+
+        input:hover {
+            background-color: gold;
+            color: maroon;
+        }
+
+        body {
+            font: bold 16pt verdana;
+        }
+    </style>
+    <script src="../js/jsFunktioen.js"></script>
+    <script>
+        var Bildnummer = 1;
+
+        function fxFirst() {
+            if (Bildnummer == 1) {
+                alert("Dies ist das erste Bild");
+            }
+            else {
+                Bildnummer = 1;
+                fxGalerieAusgbe();
+            }
+        }
+        function fxLast() {
+            if (Bildnummer == 9) {
+                alert("Dies ist das letzte Bild");
+            }
+            else {
+                Bildnummer = 9;
+                fxGalerieAusgbe();
+            }
+        }
+        function fxNext(){
+            if(Bildnummer==9){
+                alert("Das ist das letzte Bild");
+            }
+            else{
+                Bildnummer++;
+                fxGalerieAusgbe();
+            }
+        }        
+        function fxPrev(){
+            if(Bildnummer==1){
+                alert("Das ist das erste Bild");
+            }
+            else{
+                Bildnummer--;
+                fxGalerieAusgbe();
+            }
+        }        
+        function fxGalerieAusgbe() {
+            bildanzeige.innerHTML = `<img alt="Landschaftsbild 1" src="../img/Gross_${Bildnummer}.jpg">`;
+            bildbeschreibung.innerHTML = `Landschaftbild ${Bildnummer}`
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+
+        <div id="bildanzeige"><img alt="Landschaftsbild 1" src="../img/Gross_1.jpg"></div>
+        <div id="bildbeschreibung">Landschaftsbild 1</div>
+        <div id="buttons">
+
+            <input type="button" onclick="fxFirst()" value="Erstes Bild">
+            <input type="button" onclick="fxPrev()" value="Vorheriges Bild">
+            <input type="button" onclick="fxNext()" value="Nächstes Bild">
+            <input type="button" onclick="fxLast()" value="Letztes Bild">
+
+
+        </div>
+</body>
+
+</html>

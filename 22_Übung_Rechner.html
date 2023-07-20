@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Grundrechenarten</title>
+    <style>
+        .formatierung {
+            border: 3px solid black;
+            width: 500px;
+
+            margin: auto;
+            margin-top: 50px;
+            padding: 10px;
+            text-align: center;
+
+            font-weight: bold;
+            font-size: 14pt;
+            color: navy;
+            background-color: silver;
+        }
+
+        [type="text"] {
+            font-size: 24pt;
+            text-align: center;
+            padding: 20px;
+            margin: 5px;
+        }
+
+        [id="ausgabe"] {
+            background-color: yellow;
+            color: black;
+            font-weight: bold;
+        }
+    </style>
+    <script type="text/javascript" nonce="cecddf6c6acb425a832f1b93139" src="//local.adguard.org?ts=1675945281494&amp;type=content-script&amp;dmn=qualifizierung-my.sharepoint.com&amp;pth=%2Fpersonal%2Fandreas_schinagl_qualifizierung_at%2F_layouts%2F15%2Fdownload.aspx%3FUniqueId%3D16b0d8b1-d525-46a8-aa1c-bbb1498f9989%26Translate%3Dfalse%26tempauth%3DeyJ0eXAiOiJKV1QiLCJhbGciOiJub25lIn0.eyJhdWQiOiIwMDAwMDAwMy0wMDAwLTBmZjEtY2UwMC0wMDAwMDAwMDAwMDAvcXVhbGlmaXppZXJ1bmctbXkuc2hhcmVwb2ludC5jb21ANjI4ZmM0ZmYtODZkZC00NzFkLThmMTUtNWE1ZTk3Mzc0ODA5IiwiaXNzIjoiMDAwMDAwMDMtMDAwMC0wZmYxLWNlMDAtMDAwMDAwMDAwMDAwIiwibmJmIjoiMTY3NTk0NTg5MyIsImV4cCI6IjE2NzU5NDYxOTMiLCJlbmRwb2ludHVybCI6Inh2S0JaZ2NXcWdrTjE1RUJwWkltcXlYVW1mRnNGbWlyTC9ZODJza3hMV0U9IiwiZW5kcG9pbnR1cmxMZW5ndGgiOiIxNzIiLCJpc2xvb3BiYWNrIjoiVHJ1ZSIsImNpZCI6Ik5XSTROVGswWVRBdE5UQTFaaTAyTURBd0xUTTJNbU10T1RZM1pqUTNZekl4TlRSbSIsInZlciI6Imhhc2hlZHByb29mdG9rZW4iLCJzaXRlaWQiOiJaalUxT0RjelkyUXRPREpqTlMwMFl6WTBMVGxqTnpZdFptRXpZalJsWW1NeU9URmgiLCJhcHBfZGlzcGxheW5hbWUiOiJNaWNyb3NvZnQgVGVhbXMgV2ViIENsaWVudCIsImdpdmVuX25hbWUiOiJNYXJ0aW4iLCJmYW1pbHlfbmFtZSI6Ik1lZGpha292aWMiLCJzaWduaW5fc3RhdGUiOiJbXCJrbXNpXCJdIiwiYXBwaWQiOiI1ZTNjZTZjMC0yYjFmLTQyODUtOGQ0Yi03NWVlNzg3ODczNDYiLCJ0aWQiOiI2MjhmYzRmZi04NmRkLTQ3MWQtOGYxNS01YTVlOTczNzQ4MDkiLCJ1cG4iOiJpdG4yNzE3MThAcXVhbGlmaXppZXJ1bmcuYXQiLCJwdWlkIjoiMTAwMzIwMDFFREI4NjU5NiIsImNhY2hla2V5IjoiMGguZnxtZW1iZXJzaGlwfDEwMDMyMDAxZWRiODY1OTZAbGl2ZS5jb20iLCJzY3AiOiJteWZpbGVzLndyaXRlIGFsbHNpdGVzLmZ1bGxjb250cm9sIGFsbHNpdGVzLm1hbmFnZSBhbGxwcm9maWxlcy53cml0ZSIsInR0IjoiMiIsInVzZVBlcnNpc3RlbnRDb29raWUiOm51bGwsImlwYWRkciI6Ijg1LjMxLjIxLjQ3In0.amVxUkIxNHdOSTd5aFpiOGRoS0ZSY2xObzNtWEp0dVNuQzV6MFRKY3ZtWT0%26ApiVersion%3D2.0&amp;app=msedge.exe&amp;css=3&amp;js=1&amp;rel=1&amp;rji=1&amp;sbe=1"></script>
+<script type="text/javascript" nonce="cecddf6c6acb425a832f1b93139" src="//local.adguard.org?ts=1675945281494&amp;name=AdGuard%20Extra&amp;name=AdGuard%20Popup%20Blocker&amp;type=user-script"></script><script>
+        function fxAddieren() {
+            //  1. Möglichkeit
+            //  document.forms[0].elements[10].value=parseInt(document.forms[0].elements[0].value)+parseInt(document.forms[0].elements[1].value);
+
+            // 2.Möglichkeit
+            // document.forms[0].elements[10].value=parseInt(document.getElementsyId("z1").value)+parseInt(document.getElementsyId("z2").value);
+
+            // 3. Möglichkeit
+            document.forms[0].elements[10].value = parseInt(z1.value) + parseInt(z2.value);
+        }
+        function fxSubtrahieren() {
+            //  1. Möglichkeit
+            //  document.forms[0].elements[10].value=parseInt(document.forms[0].elements[0].value)-parseInt(document.forms[0].elements[1].value);
+
+            // 2.Möglichkeit
+            // document.forms[0].elements[10].value=parseInt(document.getElementsyId("z1").value)-parseInt(document.getElementsyId("z2").value);
+
+            // 3. Möglichkeit
+            document.forms[0].elements[10].value = parseInt(z1.value) - parseInt(z2.value);
+        }
+        function fxMultiplizieren() {
+            //  1. Möglichkeit
+            //  document.forms[0].elements[10].value=parseInt(document.forms[0].elements[0].value)*parseInt(document.forms[0].elements[1].value);
+
+            // 2.Möglichkeit
+            // document.forms[0].elements[10].value=parseInt(document.getElementsyId("z1").value)*parseInt(document.getElementsyId("z2").value);
+
+            // 3. Möglichkeit
+            document.forms[0].elements[10].value = parseInt(z1.value) * parseInt(z2.value);
+        }
+        function fxDivdieren() {
+            //  1. Möglichkeit
+            //  document.forms[0].elements[10].value=parseInt(document.forms[0].elements[0].value)/parseInt(document.forms[0].elements[1].value);
+
+            // 2.Möglichkeit
+            // document.forms[0].elements[10].value=parseInt(document.getElementsyId("z1").value)/parseInt(document.getElementsyId("z2").value);
+
+            // 3. Möglichkeit
+            document.forms[0].elements[10].value = (parseInt(z1.value) / parseInt(z2.value)).toFixed(2);
+        }
+
+        function fxRechnen(rechenoperation) {
+
+            // STARK VEREINFACHT
+            if (isNaN(z1.value) || isNaN(z2.value)) {
+                alert("Fehlerhafte Eingabe");
+            }
+            else {
+                switch (rechenoperation.id) {
+                    case "add": document.forms[0].elements[10].value = parseInt(z1.value) + parseInt(z2.value); break;
+                    case "sub": document.forms[0].elements[10].value = parseInt(z1.value) - parseInt(z2.value); break;
+                    case "mul": document.forms[0].elements[10].value = parseInt(z1.value) * parseInt(z2.value); break;
+                    case "div": document.forms[0].elements[10].value = (parseInt(z1.value) / parseInt(z2.value)).toFixed(2); break;
+                    default: alert("Fehlerhafte Eingabe")
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="formatierung">
+        <h1>Berechnungen mittels JavaScript</h1>
+        <form>
+            <p>
+                <input type="text" placeholder="1. Zahl" id="z1" />
+                <input type="text" placeholder="2. Zahl" id="z2" />
+            </p>
+            <p>
+                <input type="button" onclick="fxAddieren()" value="fx_Addieren" />
+                <input type="button" onclick="fxSubtrahieren()" value="fx_Subtrahieren" />
+                <input type="button" onclick="fxMultiplizieren()" value="fx_Multiplizieren" />
+                <input type="button" onclick="fxDivdieren()" value="fx_Dividieren" />
+            </p>
+
+            <p>
+                <input type="button" id="add" onclick="fxRechnen(this)" value="Addieren" />
+                <input type="button" id="sub" onclick="fxRechnen(this)" value="Subtrahieren" />
+                <input type="button" id="mul" onclick="fxRechnen(this)" value="Multiplizieren" />
+                <input type="button" id="div" onclick="fxRechnen(this)" value="Dividieren" />
+            </p>
+            <p>
+                <input id="ausgabe" type="text" placeholder="Ergebnis" disabled />
+            </p>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/jsFormate.css">
+    <script src="../js/jsFunktionen.js"></script>
+    <style>
+        button {
+            margin: 10px 0px;
+        }
+    </style>
+    <script>
+        // function fxFrmRadioButtons(){
+        //     let d = document.forms[0];
+        //     let auswahl = "";
+
+            // 1. Möglichkeit
+            // for (let i = 0; i < d.length; i++) {
+            //     if(d.elements[i].checked) {
+            //         auswahl += d.elements[i].id + "<br>";
+            //     }
+            // }
+            // fxAusgabe(auswahl);
+
+            // 2. Möglichkeit Zahl als Übergabeparameter
+            // function fxFrmRdbChecked(auswahl) {
+            //     switch(auswahl) {
+            //         case 1: fxAusgabe("Post"); break;
+            //         case 2: fxAusgabe("Mail"); break;
+            //         case 3: fxAusgabe("SMS"); break;
+            //         case 4: fxAusgabe("Fax"); break;
+            //         case 5: fxAusgabe("Brieftaube"); break;
+            //         default: fxAusgabe("Fehler");
+            //     }
+            // }
+
+            // 3. Möglichkeit Text als Übergabeparameter
+            // function fxFrmRdbChecked(auswahl) {
+            //     switch(auswahl) {
+            //         case "A": fxAusgabe("Post"); break;
+            //         case "B": fxAusgabe("Mail"); break;
+            //         case "C": fxAusgabe("SMS"); break;
+            //         case "D": fxAusgabe("Fax"); break;
+            //         case "E": fxAusgabe("Brieftaube"); break;
+            //         default: fxAusgabe("Fehler");
+            //     }
+            // }
+
+            // 4. Möglichkeit als Objekt
+            function fxFrmRdbChecked(auswahl) {
+                fxAusgabe(auswahl.id);
+            }
+        
+    </script>
+</head>
+<body>
+    <!-- form>(input:checkbox+label)*5 -->
+    <form action="">
+    <!--
+        <input type="radio" onclick="fxFrmRdbChecked(1)" name="Kontakt" id="Post"><label for="Post">Post</label>
+        <input type="radio" onclick="fxFrmRdbChecked(2)" name="Kontakt" id="Mail"><label for="Mail">Mail</label>
+        <input type="radio" onclick="fxFrmRdbChecked(3)" name="Kontakt" id="SMS"><label for="SMS">SMS</label>
+        <input type="radio" onclick="fxFrmRdbChecked(4)" name="Kontakt" id="Fax"><label for="Fax">Fax</label>
+        <input type="radio" onclick="fxFrmRdbChecked(5)" name="Kontakt" id="Brieftaube"><label for="Brieftaube">Brieftaube</label>
+    -->
+
+        <!-- <input type="radio" onclick="fxFrmRdbChecked(1)" name="Kontakt" id="Post"><label for="Post">Post</label>
+        <input type="radio" onclick="fxFrmRdbChecked(2)" name="Kontakt" id="Mail"><label for="Mail">Mail</label>
+        <input type="radio" onclick="fxFrmRdbChecked(3)" name="Kontakt" id="SMS"><label for="SMS">SMS</label>
+        <input type="radio" onclick="fxFrmRdbChecked(4)" name="Kontakt" id="Fax"><label for="Fax">Fax</label>
+        <input type="radio" onclick="fxFrmRdbChecked(5)" name="Kontakt" id="Brieftaube"><label for="Brieftaube">Brieftaube</label> -->
+
+        <!-- <input type="radio" onclick="fxFrmRdbChecked('A')" name="Kontakt" id="Post"><label for="Post">Post</label>
+        <input type="radio" onclick="fxFrmRdbChecked('B')" name="Kontakt" id="Mail"><label for="Mail">Mail</label>
+        <input type="radio" onclick="fxFrmRdbChecked('C')" name="Kontakt" id="SMS"><label for="SMS">SMS</label>
+        <input type="radio" onclick="fxFrmRdbChecked('D')" name="Kontakt" id="Fax"><label for="Fax">Fax</label>
+        <input type="radio" onclick="fxFrmRdbChecked('E')" name="Kontakt" id="Brieftaube"><label for="Brieftaube">Brieftaube</label> -->
+
+        <input type="radio" onclick="fxFrmRdbChecked(this)" name="Kontakt" id="Post"><label for="Post">Post</label>
+        <input type="radio" onclick="fxFrmRdbChecked(this)" name="Kontakt" id="Mail"><label for="Mail">Mail</label>
+        <input type="radio" onclick="fxFrmRdbChecked(this)" name="Kontakt" id="SMS"><label for="SMS">SMS</label>
+        <input type="radio" onclick="fxFrmRdbChecked(this)" name="Kontakt" id="Fax"><label for="Fax">Fax</label>
+        <input type="radio" onclick="fxFrmRdbChecked(this)" name="Kontakt" id="Brieftaube"><label for="Brieftaube">Brieftaube</label>
+    </form>
+    <!-- <button onclick="fxFrmRadioButtons()">Klick mich!</button> -->
+    <div id="ausgabe1">Hier kommt die Ausgabe ...</div>
+</body>
+</html>
