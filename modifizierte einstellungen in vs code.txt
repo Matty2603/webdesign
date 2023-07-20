@@ -1,0 +1,36 @@
+----------
+
+auto save > after delay
+
+----------
+
+bracket pair colorization: independent color pool per bracket type (häkchen setzen)
+bracket pairs > active
+
+----------
+
+word wrap > on
+editor: word wrap > on
+wrapping indent > indent
+
+----------
+
+linked editing (häkchen setzen)
+
+----------
+
+icon theme: vs code icons
+
+----------
+
+Minimap > disabled (häkchen entfernen)
+
+----------
+
+mouse wheel zoom (häkchen setzen)
+
+----------
+
+emmet variables > lang: de
+
+----------
