@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medjakovic Martin</title>
+    <link rel="stylesheet" href="../bootstrap/MT_Medjakovic.css">
+</head>
+<body>
+        
+        <h1 class="medjakovic">Modultest: Martin Medjakovic</h1>
+    
+        <h2 id="martin">Formular</h2>
+
+        <form action="">
+                <fieldset>
+                    <legend>Personendaten</legend>
+                    <table>
+                        <tr>
+                            <td>Name:</td>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td>Geburtstag:</td>
+                            <td><input type="date"></td>
+                        </tr>
+                        <tr>
+                            <td>Strasse:</td>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td>Postleitzahl:</td>
+                            <td><input type="number"></td>
+                        </tr>
+                        <tr>
+                            <td>Ort:</td>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td>Emailadresse:</td>
+                            <td><input type="email"></td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </form>
+    
+            <form action="">
+                <fieldset>
+                    <legend>Wohnungsausstattung und Bundesland</legend>
+                    <table>
+                        <tr>
+                            <td>Heizung:</td>
+                            <td><input type="radio" name="heizung" id="strom">
+                                <label for="strom">Strom</label>
+                                
+                                <input type="radio" name="heizung" id="gas">
+                                <label for="gas">Gas</label>
+                                
+                                <input type="radio" name="heizung" id="fern">
+                                <label for="fern">Fernwärme</label></td>
+                        </tr>
+                        <tr>
+                            <td>Zusätzlich:</td>
+                            <td><input type="checkbox" name="loggia" id="loggia">
+                                <label for="loggia">Loggia</label>
+                                
+                                <input type="checkbox" name="balkon" id="balkon">
+                                <label for="balkon">Balkon</label>
+                                
+                                <input type="checkbox" name="garten" id="garten">
+                                <label for="garten">Garten</label></td>
+                        </tr>
+                        <tr>
+                            <td>Bundesland:</td>
+                            <td><select name="Bundesland" id="Bundesland">
+                                <option value="W">Wien</option>
+                                <option value="N">Niederösterreich</option>
+                                <option value="O">Oberösterreich</option>
+                                <option value="S">Salzburg</option>
+                                <option value="T">Tirol</option>
+                                <option value="V">Vorarlberg</option>
+                                <option value="B">Burgenland</option>
+                                <option value="K">Kärnten</option>
+                                <option value="St">Steiermark</option>
+                            </select></td>
+                        </tr>
+                    </table>
+                </fieldset>
+
+                <fieldset>
+                    <button type="reset">Zurücksetzen</button>
+                    <button type="submit">Absenden</button>
+                </fieldset>
+                
+            </form>
+
+</body>
+</html>

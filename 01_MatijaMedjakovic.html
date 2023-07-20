@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modultest Medjakovic</title>
+    <style>
+        /* erstellen Sie für ALLE elemente folgende Formatierung
+            schriftfarbe: chocolate
+            schriftschnitt: fett
+        */
+        * {
+            color: chocolate;
+            font-weight: bold;
+        }
+
+        /* erstellen sie für fieldsets folgende Formatierung
+            Rahmen EINZELN:
+            Rahmenfarbe: chocolate
+            Rahmensstärke: 3 Pixel
+            RAhmenart: durchzogene Rahmenlinie
+            Aussenabstand nach unten: 20 Pixel
+        */
+        fieldset {
+            border-color: chocolate;
+            border-width: 3px;
+            border-style: solid;
+            margin-bottom: 20px;
+        }
+
+        /* formatieren Sie alle Tabellenkopfzellem mit einer 
+        Textausrichtung: rechts 
+        */
+        th {
+            text-align: right;
+        }
+
+        /* erstellen sie für alle legend's folgende Formatierung
+        Hintergrundfarbe: Weiss
+        Schriftgröße: 16 Punkt
+        Innenabstand: 5 Pixel
+        Schriftart: Courier New
+        Rahmen ZUSAMMENGEFASST:
+        Rahmenstärke: 3 Pixel
+        Rahmenart: durchzogene  Rahmenlinie
+        Rahmenfarbe: chocolate
+        */
+        legend {
+            background-color: white;
+            font-size: 16pt;
+            padding: 5px;
+            font-family: 'Courier New', Courier, monospace;
+            border: 3px solid chocolate;
+        }
+
+        /* Erstellen Sie eine Klasse mit der Bezeichnung container und mit folgender Formatierung
+        Breite: 80 Viewportbreite
+        Aussenabstand: Automatisch
+        Innenabstand: 50 Pixel
+        Hintergrundfarbe: lightgoldenrodyellow
+    
+        Rahmen ZUSAMMENGEFASST:
+        Rahmenstärke: 5 Pixel
+        Rahmenart: durchzogene  Rahmenlinie
+        Rahmenfarbe: schwarz
+        */
+        .container {
+            width: 80vb;
+            margin: auto;
+            padding: 50px;
+            background-color: lightgoldenrodyellow;
+            border: 5px solid black;
+        }
+
+        /* Erstellen Sie eine ID mit ihrem Nachnamen und folgender Formatierung
+        Spaltenbreite: 300 Pixel
+        Spaltenabstand: 50 Pixel
+        Trennline zusammengefasst:
+        Stärke: 5 Pixel
+        Linienart: duzrchzogene Linie
+        Linienfarbe: chocolate
+        Innenabstand: 20 Pixel
+
+        Rahmen ZUSAMMENGEFASST:
+        Rahmenstärke: 5 Pixel
+        Rahmenart: durchzogene  Rahmenlinie
+        Rahmenfarbe: chocolate   
+        */
+        #medjakovic {
+            column-width: 300px;
+            column-gap: 50px;
+            column-rule: 5px solid chocolate;
+            padding: 20px;
+            border: 5px solid chocolate;
+        }
+
+        #medjakovic h2 {
+            column-span: all;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <h1>Modultest Medjakovic</h1>
+    <h2>Aufgabe 1</h2>
+    <form action="">
+        <fieldset>
+            <legend>Personendaten</legend>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <td><input type="text" name="Name" id="Name"></td>
+                </tr>
+                <tr>
+                    <th>Strasse</th>
+                    <td><input type="text" name="Strasse" id="Strasse"></td>
+                </tr>
+                <tr>
+                    <th>Postleitzahl</th>
+                    <td><input type="text" name="Postleitzahl" id="Postleitzahl"></td>
+                </tr>
+                <tr>
+                    <th>Ort</th>
+                    <td><input type="text" name="Ort" id="Ort"></td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <fieldset>
+            <legend>Bestellung</legend>
+            <table>
+                <tr>
+                    <th>Pizzagrösse:</th>
+                    <td><input type="radio" name="Klein" id="Klein"><label for="Klein">Klein</label>
+                        <input type="radio" name="Mittel" id="Mittel"><label for="Mittel">Mittel</label>
+                        <input type="radio" name="Gross" id="Gross"><label for="Gross">Gross</label>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Pizza:</th>
+                    <td>
+                        <select name="Pizza" id="Pizza">
+                            <option value="Cardinale">Cardinale</option>
+                            <option value="Salami">Salami</option>
+                            <option value="Hawaii">Hawaii</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Extra:</th>
+                    <td><input type="checkbox" name="Schinken" id="Schinken"><label for="Schinken">Schinken</label>
+                        <input type="checkbox" name="Käse" id="Käse"><label for="Käse">Käse</label>
+                        <input type="checkbox" name="Speck" id="Speck"><label for="Speck">Speck</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <textarea name="Kommentar" id="Kommentar" cols="30" rows="10">Bitte geben Sie ihren Kommentar ein:</textarea>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+    <h2>Aufgabe 2</h2>
+
+    <ul>
+        <li><a href="https://www.apple.at">https://www.apple.at</a></li>
+        <li><a href="https://www.microsoft.at">https://www.microsoft.at</a></li>
+        <li><a href="https://www.lenovo.at">https://www.lenovo.at</a></li>
+    </ul>
+
+    <h2>Aufgabe 3</h2>
+
+    <figure>
+        <a href="https://www.bbrz.at/"><img src="../img/bbrz.png" alt="Das Logo der BBRZ Reha GmbH"></a>
+    </figure>
+
+    <h2>Aufgabe 4</h2>
+        <div id="medjakovic">
+        <h2>Modultest von Medjakovic</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis labore voluptas molestias eos sed, eius a debitis quibusdam beatae, nesciunt numquam minus placeat earum quod! Ipsa facere culpa sit voluptate officia ipsam, similique quae pariatur neque modi odit provident. Maxime, similique rerum quo culpa fugiat maiores molestiae explicabo a voluptate ullam incidunt! Aut maiores, quae consequuntur ex, vero rem atque quas quod deserunt quis deleniti minus libero rerum illum odio vel eum veniam voluptatem dolorum, ullam aperiam eos. Modi fugit ad, rerum aspernatur molestias quas sunt, doloribus dolorum deserunt perspiciatis hic dolore reprehenderit at praesentium ducimus? Ab aspernatur modi perspiciatis, pariatur molestias alias! Obcaecati odit adipisci earum impedit aut quasi cupiditate nostrum nisi recusandae in numquam, animi, consectetur atque soluta ducimus architecto modi tempora alias ut magnam. Cumque natus adipisci laboriosam aspernatur accusantium! Accusamus esse non expedita iste minus laborum, deserunt sint, consectetur rem quos nemo amet distinctio eum voluptatem. Doloribus, eum consequuntur in eaque doloremque nemo adipisci quod odio rem magnam fugit fuga et eligendi, amet vero. Vero dolore dolor dolores cum, maxime expedita amet odit, fuga et rerum commodi! Est mollitia id excepturi sapiente labore in ab, veniam, rem illum repellendus molestiae amet pariatur cumque quod assumenda delectus!</p>
+    </div>
+
+</div>
+</body>
+</html>

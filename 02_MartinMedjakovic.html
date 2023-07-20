@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/MT_Vorbereitung.css">
+</head>
+<body>
+    <h1>MODULTEST Martin Medjakovic</h1>
+    <h2>FORMULAR</h2>
+    <form action="">
+        <fieldset>
+            <legend>Name</legend>
+            <table>
+                <tr>
+                    <td class="td1">Titel</td>
+                    <td class="td2">
+                        <input type="radio" name="titel" id="kein">
+                        <label for="kein">Kein</label>
+                        
+                        <input type="radio" name="titel" id="dr">
+                        <label for="dr">Dr.</label>
+                        
+                        <input type="radio" name="titel" id="mag">
+                        <label for="mag">Mag.</label>
+
+                        <input type="radio" name="titel" id="dipl">
+                        <label for="dipl">Dipl.-Ing.</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td1">Vorname:</td>
+                    <td class="td2"><input type="text" size="50" maxlength="49"></td>
+                </tr>
+                <tr>
+                    <td class="td1">Nachname:</td>
+                    <td class="td2"><input type="text" size="50" maxlength="49"></td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <fieldset>
+            <legend>Adresse</legend>
+            <table>
+                <tr>
+                    <td class="td1">Strasse:</td>
+                    <td class="td2"><input type="text" size="50" maxlength="49"></td>
+                </tr>
+                <tr>
+                    <td class="td1">PLZ:</td>
+                    <td class="td2"><input type="text" size="50" maxlength="49"></td>
+                </tr>
+                <tr>
+                    <td class="td1">Ort:</td>
+                    <td class="td2"><input type="text" size="50" maxlength="49"></td>
+                </tr>
+                <tr>
+                    <td>Bundesland:</td>
+                    <td>
+                        <select name="Bundesland" id="Bundesland">
+                            <option value="W">Wien</option>
+                            <option value="N">Niederösterreich</option>
+                            <option value="O">Oberösterreich</option>
+                            <option value="S">Salzburg</option>
+                            <option value="T">Tirol</option>
+                            <option value="V">Vorarlberg</option>
+                            <option value="B">Burgenland</option>
+                            <option value="K">Kärnten</option>
+                            <option value="St">Steiermark</option>
+                        </select>
+                    </td>
+                </tr>
+                </table>
+        </fieldset>
+
+        <fieldset>
+            <legend>Kontaktdaten</legend>
+            <table>
+                <tr>
+                    <td class="td1">Telefon:</td>
+                    <td class="td2"><input type="tel" size="50" maxlength="49"></td>
+                </tr>
+                <tr>
+                    <td class="td1">E-Mail:</td>
+                    <td class="td2"><input type="email" size="50" maxlength="49"></td>
+                </tr>
+                <tr>
+                    <td class="td1">Webseite:</td>
+                    <td class="td2"><input type="url" size="50" maxlength="49"></td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <fieldset class="bottomset">
+            <button type="reset">Reset</button>
+            <button type="submit">Senden</button>
+        </fieldset>
+    </form>
+</body>
+</html>
