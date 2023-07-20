@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!-- <html lang="de"> -->
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Attribute werden in eckigen Klammern formatiert z.b. [title] formatiert alle Elemente welche ein title-Attribut besitzen */
+
+        [title] {
+            font-family: verdana;
+        }
+
+        /* formatiert alle h1-Elemente welche ein title-Attribut besitzen */
+        h1[title] {
+            color: gold
+        }
+
+        /* formatiert alle Elemente welche mit Heute beginnen */
+        [title^="Heute"] {
+            background-color: maroon;
+        }
+
+        /* formatiert alle Elemente welche auf Heute enden */
+        [title$="Heute"] {
+            background-color: navy;
+        }
+
+        /* formatierrt alle Element bei welchen das Wort Heute ein eigenständiges Wort ist */
+        [title~="Heute"] {
+            text-transform: uppercase;
+        }
+
+        /* formatiert alle Elemente in welchen te vorkommt  */
+        [title*="te"] {
+            text-decoration: underline;
+        }
+
+        /* formatiert alle Elemente bei welchen  der Attributswert exakt auf "Heute ist mit Mittwoch" lautet */
+        [title="Heute ist Mittwoch"] {
+            background-color: skyblue;
+        }
+
+        /* N I C H T  D U R C H G E N O M M E N */
+
+        /* Formatiert alle elemente bei welchen der lang-attributswert mit DE/de.. beginnt */
+        [lang|="DE"] {
+            color: red;
+        }    
+
+       /*  [title="Schinagl"]{ case-Sensitive*/
+        [title="schinagl" i]{ /* case-Sensitive witd ignoriert*/
+            background-color: navy;
+        }
+
+        /* Hervorheben des ausgewählten Formulas */
+        form:focus-within{background-color: red;}
+        
+        </style>
+</head>
+
+<body>
+    <h1>Lorem ipsum dolor sit amet.</h1>
+    <h1 title="Heute ist Mittwoch">Lorem ipsum dolor sit amet.</h1>
+    <h1 title="ist Heute Mittwoch">Minus facilis enim pariatur optio?</h1>
+    <h1 title="Mittwoch ist Heute">A nihil iste natus optio!</h1>
+    <h1 title="Mittwoch Heute  ist ">Harum quae architecto totam qui!</h1>
+    <h1 title="Heute Mittwoch ist ">Earum rem animi magnam cupiditate!</h1>
+    <h1 title="Andreas Peter Schinagl">Nostrum ex dolorum non id!</h1>
+    <h2 title="Andreas Peer Schinagl">Nostrum ex dolorum non id!</h2>
+
+    <h1 lang="de-de">Im Unterricht nicht durchgenommen</h1>
+    <h1 lang="DE-DE">Im Unterricht nicht durchgenommen</h1>
+    <h1 lang="De-AT">Im Unterricht nicht durchgenommen</h1>
+    <h1 lang="AT-DE">Im Unterricht nicht durchgenommen</h1>
+    <h1 lang="AT">Im Unterricht nicht durchgenommen</h1>
+    <h1 lang="DE">Im Unterricht nicht durchgenommen</h1>
+    <h1 lang="de">Im Unterricht nicht durchgenommen</h1>
+    <h1 title="Schinagl">Im Unterricht nicht durchgenommen</h1>
+
+
+    <div>
+        <form action="">
+            <fieldset>
+                <legend>wosasi</legend>
+                <input type="text" placeholder="Eingabefeld1"><br><input type="text" placeholder="Eingabefeld2"><br><input type="text" placeholder="Eingabefeld3"><br><input type="text" placeholder="Eingabefeld4"><br><input type="text" placeholder="Eingabefeld5"><br></fieldset>
+        </form>
+        <form action="">
+            <fieldset>
+                <legend>wosasi</legend>
+                <input type="text" placeholder="Eingabefeld1"><br><input type="text" placeholder="Eingabefeld2"><br><input type="text" placeholder="Eingabefeld3"><br><input type="text" placeholder="Eingabefeld4"><br><input type="text" placeholder="Eingabefeld5"><br></fieldset>
+        </form>
+        <form action="">
+            <fieldset>
+                <legend>wosasi</legend>
+                <input type="text" placeholder="Eingabefeld1"><br><input type="text" placeholder="Eingabefeld2"><br><input type="text" placeholder="Eingabefeld3"><br><input type="text" placeholder="Eingabefeld4"><br><input type="text" placeholder="Eingabefeld5"><br></fieldset>
+        </form>
+    </div>
+</body>
+
+</html>
