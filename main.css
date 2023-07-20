@@ -1,0 +1,32 @@
+/* 
+Komponentenabschnittsüberschrift
+
+Komponentenbeschreibung und Verwendung
+*/
+
+/* base - shared styles */
+.component {
+    width: 220px;
+}
+
+/* Unterkomponente mit Komponentennamen als Präfix, um Stile zu isolieren und die Kaskade zu unterbrechen */
+.component-heading {
+    display: block;
+    width: 100px;
+    font-size: 1rem;
+}
+
+/* variant - alert color */
+.component-alert{
+    color: #ff0000;
+}
+
+/* variant - success color */
+.component-success{
+    color: #00ff00;
+}
+
+/* Fügen Sie Medienabfragen unterhalb der Komponenten statt eines separaten Stylesheets oder Abschnitts hinzu, um die Aktualisierung zu vereinfachen */
+@media (min-width: 480px) {
+    .component-heading {width: auto;}
+}

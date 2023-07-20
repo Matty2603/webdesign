@@ -1,0 +1,90 @@
+h1 {
+    color: pink;
+}
+
+.box {
+    /* breite */
+    width: 800px;
+    /* höhe */
+    height: 200px;                  
+    /* hintergrundfarbe */
+    background-color: gold;        
+    /* textüberlauf */
+    overflow-y: scroll;
+
+    /* Rahmenformatierung zusammengefasst, muss in dieser Reihenfolge geschehen. */
+    border: 5px solid maroon;
+
+    /* Rahmenformatierung einzeln */
+
+    /* Rahmenstärke*/
+    border-width: 10px;
+    
+    /* Rahmenfarbe alle 4 Seiten*/
+    border-color: maroon;
+    
+    /* Rahmenfarbe 1. Wert oben/unten, 2. Wert links und rechts.*/
+    border-color: maroon navy;
+    
+    /* Rahmenfarbe 1. Wert oben, 2. Wert links und rechts, 3. Wert unten.*/
+    border-color: maroon navy green;
+    
+    /* Rahmenfarbe 1. Wert oben, 2. Wert links, 3. Wert rechts, 4. Wert unten.*/
+    border-color: maroon navy green red;
+    
+    /* Rahmenarten */
+    border-style: double dotted dashed solid;
+    
+    /* Innenabstand */
+    padding: 30px;
+
+    /* Aussenabstand */
+    margin: auto;
+
+    /* Schriftart */
+    font-family: verdana;
+
+    /* Schriftgrösse */
+    font-size: 16pt;
+
+    /* Schriftschnitt */
+    font-weight: bold;
+
+    /* Schrift zusammengefasst formatieren, Reihenfolge muss beachtet werden */
+    font: bold italic 14pt Courier;
+
+    /* Textausrichtung: center, left, right, justify */
+    text-align: center;
+
+    /* Textformatierungen */
+
+    /* Strich über dem Text */
+    /* text-decoration: underline; */
+
+    /* unterstreichen */
+    /* text-decoration: overline; */
+
+    /* durchgetrichener Text */
+    /* text-decoration: line-through; */
+
+    /* Anfagsbuchstaben von jedem Wort in Großbuchstaben */
+    /* text-decoration: capitalize; */
+
+    /* Text in Großbuchstaben */
+    /* text-decoration: uppercase; */
+
+    /* Text in Kleinbuchstaben */
+    /* text-decoration: lowercase; */
+
+    /* Text rot unterstrichen */
+    /* text-decoration: underline red; */
+
+    /* Text rot gewellt unterstrichen */
+    text-decoration: underline wavy red;
+
+    /* Einzelne Formatierungen */
+    text-decoration-color: blue;
+    text-decoration-line: overline;
+    text-decoration-style: double;
+
+}
