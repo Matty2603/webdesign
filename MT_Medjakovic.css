@@ -1,0 +1,151 @@
+/* 
+    Formatieren sie die Elemente Form, input, select, option und fieldset wie folgt:
+    Hintergrundfarbe: navajowhite
+    Schriftfarbe: Maroon
+
+    Rahmen ZUSAMMENGEFASST
+    Rahmenbreite: 3 Pixel
+    Rahmenart: durchzogene Rahmenlinie
+    Rahmenfarbe:Maroon
+
+    Schrift ZUSAMMENGEFASST:
+    Schriftschnit: Fett
+    Schriftgröße: 12 Punkt
+    Schriftart: Verdana
+
+    Außenabstand: Auto
+*/
+
+form, input, select, option, fieldset
+{
+    background-color: navajowhite;
+    color: maroon;
+    border: 3px solid maroon;
+    font: border 12pt verdana;
+    margin:auto;
+}
+
+/*
+    Formatieren das Select Element
+    Breite:250 Pixel
+    Textausrichtung: Zentriert
+*/
+
+select
+{
+    width: 250px;
+    text-align: center;
+}
+
+/* 
+Formatieren Sie das Form-Element:
+Breite: 500 Pixel 
+*/
+
+form
+{
+    width: 500px;
+}
+
+/*
+    Erstellen Sie legend-element folgende Formatierung:
+    Hintergrundfarbe: Maroon
+    Schriftfarbe: navajowhite
+    Innenabstand: 10 Pixel
+*/
+
+legend
+{
+    background-color: maroon;
+    color: navajowhite;
+    padding: 10px;
+}
+
+/* Erstellen Sie für fieldsets einen Aussenabstand von 20 Pixel */
+
+fieldset
+{
+    margin: 20px;
+}
+
+/* 
+Erstellen Sie für h1 Elemente eine Klasse mit ihren Nachnamen und wenden Sie diese im HTML-Dokument im H1 Element an
+Schriftart: Verdana
+Hintergrundfarbe: Maroon
+Schiriftfarbe: navajowhite
+Textausrichtung: Zentriert
+*/
+
+h1.medjakovic
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: maroon;
+    color: navajowhite;
+    text-align: center;
+}
+
+/* 
+    Erstellen Sie eine id mit ihrem Vornamen und wenden Sie diese im h2 Element im HTML-Dokument an 
+    Schriftart: Verdana
+    Hintergrundfarbe: navajowhite
+    Schriftfarbe: Maroon
+    Textausrichtung: Zentriert
+
+    Rahmenformatierung EINZELN
+    Rahmenstärke: 4 Pixel
+    Rahmenart: Strichliert
+    Rahmenfarbe: Maroon
+*/
+
+h2#martin
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: navajowhite;
+    color: maroon;
+    text-align: center;
+    border-width: 4px;
+    border-style: dashed;
+    border-color: maroon;
+}
+
+/* 
+    Erstellen Sie für Button-Elemente folgende Formatierung 
+    Außenabstand: 5 Pixel
+    Innenabstand: 5 Pixel
+    Hintergrundfarbe: Maroon
+    Schriftfarbe: navajowhite
+    Rahmen: kein Rahmen
+    Breite: 100%
+
+    Schrift ZUSAMMENGEFASST:
+    Schriftschnitt: Fett
+    Schriftgröße: 12 Punkt
+    Schriftart: Verdana
+*/
+
+button
+{
+    margin: 5px;
+    background-color: maroon;
+    color: navajowhite;
+    border: none;
+    width: 100%;
+    font: bold 12pt Verdana;
+}
+
+/* 
+Erstellen Sie für Button-Elemente einen Mouseover-Effekt mit folgender Formatierung
+Hintergrundfarbe: navajowhite
+Schriftfarbe: Maroon
+
+Ramhen EINZELN
+Rahmenstärke: 3 Pixel
+Rahmenart: durchzogene Rahmenliniebday
+Rahmenfarbe: Maroon
+*/
+
+button:hover
+{
+    background-color: navajowhite;
+    color: maroon;
+}

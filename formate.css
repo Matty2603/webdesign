@@ -1,0 +1,22 @@
+body, html{
+    background-image: url(../images/Gross_10.JPG);
+    background-repeat: no-repeat;
+    opacity: 0.2;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    border: 1px solid black;
+    width: 700px;
+    background-color: cornsilk;
+    padding: 20px;
+    margin: auto;
+    height: 700px;
+    overflow: scroll;
+}
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: steelblue;
+    border: 1px solid black;
+}

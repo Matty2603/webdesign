@@ -1,0 +1,51 @@
+body
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1em;
+    width: max-content;
+    margin:auto;
+}
+img
+{
+    padding-left: 20px;    
+}
+div
+{
+    padding: 25px;
+    background-color: rgba(244, 164, 96, 1);
+    border: 5px dotted black;
+
+}
+h1, h2
+{
+    background-color: rgba(128, 0, 0, 1);
+    color: rgba(244, 164, 96, 1);
+    text-align: center;
+    padding: 10px;
+}
+table, th, td
+{
+    border:1px solid rgba(128, 0, 0, 1);
+    border:1px solid rgba(128, 0, 0, 1);
+    border-collapse: collapse;
+
+}
+th, td
+{
+    width: 150px;
+    height: 40px;
+    text-align: left;
+    padding-left: 20px;
+}
+.formtab_col1
+{
+    width: 150px;
+}
+.formtab_col2
+{
+    width: 300px;
+}
+#button
+{
+    text-align: center;
+}

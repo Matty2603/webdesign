@@ -1,0 +1,66 @@
+body
+{
+    width: max-content;
+    margin: auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+h1
+{
+    background-color: maroon;
+    border: 5px solid goldenrod;
+    color: gold;
+    text-align: center;
+    padding: 10px;
+}
+h2
+{
+    background-color: maroon;
+    border: 5px solid goldenrod;
+    color: gold;
+    text-align: center;
+    padding: 10px;
+}
+form
+{
+    background-color: maroon;
+    border: 5px solid goldenrod;
+    color: gold;
+}
+fieldset
+{
+    border: 1px solid goldenrod;
+    margin: 15px;
+}
+.bottomset
+{
+    text-align: center;
+}
+legend
+{
+    padding: 5px;
+    border: 1px solid goldenrod;
+}
+td
+{
+    height: 40px;
+}
+.td1
+{
+    width: 100px;
+}
+.td2
+{
+    width: fit-content;
+}
+button
+{
+    width: 60px;
+    background-color: darkred;
+    border: 1px solid goldenrod;
+    color: gold;
+}
+button:hover
+{
+    border: 1px solid whitesmoke;
+    color: whitesmoke;
+}
