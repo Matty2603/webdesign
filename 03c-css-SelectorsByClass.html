@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SelectorsByClass</title>
+    <style>
+        /* The class selector selects HTML elements with a specific class attribute. */
+        /* To select elements with a specific class, write a period (.) character, followed by the class name. */
+
+        /* The universal selector (*) selects all HTML elements on the page. */
+        * {
+            background-color: lightcoral;
+        }
+
+        .center {
+            text-align: center;
+            color: red;
+        }
+
+        /* The grouping selector selects all the HTML elements with the same style definitions. */
+        h1 {
+            font-style: italic;
+        }
+
+        h2 {
+            font-style: oblique;
+        }
+
+        h3 {
+            font-style: normal;
+        }
+
+        p.large {
+            font-size: 300%;
+        }
+    </style>
+</head>
+<body>
+    <!-- In this example all HTML elements with class="center" will be red and center-aligned: -->
+    <h1 class="center">Red and center-aligned heading.</h1>
+    <h2 class="center">Red and center-aligned heading.</h2>
+    <h3 class="center">Red and center-aligned heading.</h3>
+    <p class="center">Red and center-aligned paragraph.</p>
+
+    <!-- In this example only <p> elements with class="center" will be red and center-aligned:  -->
+        <!-- <style>
+            p.center {
+                text-align: center;
+                color: red;
+            }
+        </style>
+
+    <h1 class="center">This heading will not be affected.</h1>
+    <p class="center">This paragraph will be affected.</p> -->
+
+    <!-- In this example the <p> element will be styled according to class="center" and to class="large":  -->
+        <!-- <h1 class="center">This heading will not be affected.</h1>
+        <p class="center">This paragraph will be red and center-aligned.</p>
+        <p class="center large">This paragraph will be red, center aligned, and in a large font-size.</p> -->
+</body>
+</html>
