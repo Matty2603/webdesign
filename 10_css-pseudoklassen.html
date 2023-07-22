@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Unbesuchter Link */
+        a:link {
+            color: green;
+            font-weight: bold;
+            background-color: lightgreen;
+            /* Padding = Innenabstad */
+            padding: 10px;
+
+            /* Margin =Aussenabstand */
+            margin-top: 10px;
+            border: 3px solid green;
+        }
+
+        /* Besuchter Link */
+        a:visited {
+            color: magenta;
+        }
+
+        /* Mouseover/Hover */
+        a:hover {
+            background-color: gold;
+            color: maroon;
+            border: 3px solid maroon;
+        }
+
+        /* Aktiver Link */
+        a:active {
+            background-color: skyblue;
+            color: navy;
+            /* Rahmenfarbe */
+            border-color: navy;
+        }
+
+        /* Formatiert alle ungeraden p-Element */
+        p:nth-of-type(odd){
+            color: navy;
+            background-color: skyblue;
+        }
+        /* Formatiert alle geraden p-Element */
+        p:nth-of-type(even){
+            color: maroon;
+            background-color: gold;
+        }
+        
+        /* Formatiert das 2. p-Element*/
+        p:nth-of-type(2){
+            color: red;
+            background-color: gold;
+        }
+         /* Formatiert jedes 2. p-Element*/
+         p:nth-of-type(2n){
+            color: green;
+            background-color: lightgreen;
+        }
+         /* Formatiert jedes 2. p-Element beginnend mit dem 1. p-Element */
+         p:nth-of-type(2n+1){
+             color: red;
+            background-color: lightpink;
+        }
+
+        /* Formatiert das 1. Kindelement */
+        p:first-child{
+            background-color:khaki;
+        }
+
+        /* Formatiert das 1. Kindelement */
+       p:last-child{
+            background-color:maroon;
+            color:gold;
+        }
+
+        div{
+            border:5px solid black
+        }
+        /* Fomratiert das Wurzelelement
+        :root{
+            background-color: skyblue;
+        } */
+
+        /* Formatiert alle elemente außer p-Elemente */
+        :not(p){
+            color: blue;
+            background-color: skyblue;
+        }
+      
+
+    </style>
+</head>
+
+<body>
+
+
+   <!--  <a href="http://www.microsoft.at" target="_blank" rel="noopener noreferrer">Zur Webseite von Microsoft</a> -->
+
+    <p> 1. Kindelement im Body-Bereich<br>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore sequi, officiis quos quasi, reiciendis deleniti sunt voluptates tenetur natus repellendus, adipisci totam fugit ipsam? Amet facilis maxime temporibus quibusdam veritatis.</p>
+    <p>Praesentium eaque nihil nemo aut atque, dolor fugiat aliquam fugit quidem consequatur eum in sed? Nobis, iste vitae! Autem corporis assumenda repellendus laboriosam nemo esse totam blanditiis tempore expedita nesciunt!</p>
+    <h1>Heute ist ein schöner Tag</h1>
+    <h2>Heute ist ein schöner Tag</h2>
+    <p>Eaque quas maxime ducimus repellat, fugiat corrupti earum recusandae reiciendis ad in sapiente ipsum esse beatae rerum. Maiores modi a itaque aperiam tenetur facilis, officiis harum nostrum, repudiandae enim fugiat.</p>
+    <div>
+        <p> 1. Kindelement im Div-Bereich <br>sed mollitia rerum autem praesentium perferendis, corrupti itaque repudiandae! Explicabo aperiam praesentium adipisci, eaque necessitatibus enim magnam fugiat modi maxime, eum iusto quasi? Quis sunt repellat similique accusantium tempora.</p>
+        <p>Placeat, earum vero. Eveniet eaque doloribus deleniti itaque, fugit provident animi praesentium corrupti cupiditate laboriosam debitis nisi explicabo rerum? Provident voluptatem sit itaque non sed quidem deserunt ipsam cum repellat.</p>
+        <p>Omnis deserunt provident aut, quae dignissimos porro beatae fugit rerum dolorum ab rem repellat esse nostrum, suscipit, cumque minus ea voluptates delectus officia. Ea sint laborum hic libero suscipit possimus!</p>
+        <p> Letzes Kindelement im Div-Bereich <br>harum perspiciatis, ratione quis dolore saepe quae commodi sunt odit quos ad dicta exercitationem id eum, eveniet nostrum amet, labore adipisci delectus explicabo voluptates corporis accusamus accusantium. Dicta, laboriosam.</p>
+    </div>
+    <p>Ipsam autem magnam nulla? Aliquam quam quod deleniti perferendis natus, expedita officia tempora, ad et sequi ducimus, nostrum aliquid cumque dolore rem qui deserunt. Beatae vitae dolorem minus non odio.</p>
+    <p>In, fugit quidem. Possimus unde ipsam eaque inventore impedit velit aliquid molestias repellendus deserunt, adipisci illum magnam? Unde atque expedita architecto porro esse ipsa officiis ducimus pariatur neque necessitatibus! Illo!</p>
+    <p>Quam, vel vitae. Totam, iure, quaerat est unde, similique aliquam temporibus adipisci qui necessitatibus quam cum! Architecto nihil sapiente debitis animi nesciunt vel perspiciatis sed! Consectetur, recusandae. Quaerat, voluptatem aperiam.</p>
+
+    <div>
+        <p>
+            1. Kindelement im Div-Bereich <br> sed mollitia rerum autem praesentium perferendis, corrupti itaque repudiandae! Explicabo aperiam praesentium adipisci, eaque necessitatibus enim magnam fugiat modi maxime, eum iusto quasi? Quis sunt repellat similique accusantium tempora.            
+        </p>
+        <p>Placeat, earum vero. Eveniet eaque doloribus deleniti itaque, fugit provident animi praesentium corrupti cupiditate laboriosam debitis nisi explicabo rerum? Provident voluptatem sit itaque non sed quidem deserunt ipsam cum repellat.</p>
+        <p>Omnis deserunt provident aut, quae dignissimos porro beatae fugit rerum dolorum ab rem repellat esse nostrum, suscipit, cumque minus ea voluptates delectus officia. Ea sint laborum hic libero suscipit possimus!</p>
+        <p>
+            Letzes Kindelement im Div-Bereich<br> harum perspiciatis, ratione quis dolore saepe quae commodi sunt odit quos ad dicta exercitationem id eum, eveniet nostrum amet, labore adipisci delectus explicabo voluptates corporis accusamus accusantium. Dicta, laboriosam
+        </p>
+    </div>
+    <p>
+
+         Letzes Kindelement im Body-Bereich<br> harum perspiciatis, ratione quis dolore saepe quae commodi sunt odit quos ad dicta exercitationem id eum, eveniet nostrum amet, labore adipisci delectus explicabo voluptates corporis accusamus accusantium. Dicta, laboriosam
+    </p>
+   
+</body>
+
+</html>

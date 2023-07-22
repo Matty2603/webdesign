@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>        
+        /* Formatiert den 1. Buchstaben */
+        p::first-letter{
+            font-size: 32pt;
+            color: red;
+            font-weight: bold;
+        }
+
+        /* Formatiert die 1. Zeile */
+        p::first-line{
+            color: blue;
+        }
+
+        /* Formatiert die Auswahl */
+        p::selection{
+            background-color: yellow;
+        }
+
+        /* before/after fügt am Beginn bzw.am Ende ein Bild hinzu */
+        p::after{
+            content: url(../images/checkmark.png);
+        }
+
+        /* Formatiert Listenelemente */
+        ::marker{
+            color:red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>Wien</li>
+        <li>Linz</li>
+        <li>Graz</li>
+    </ul>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus libero aspernatur fuga velit incidunt, in, quibusdam minus laboriosam beatae distinctio voluptate nobis possimus ipsa iste officiis cum laborum numquam quaerat.</p>
+    <p>Natus praesentium molestiae blanditiis et voluptates asperiores odio iure, optio consequatur quam, ipsa enim qui consequuntur fugiat ratione earum. Laudantium velit qui dolores porro placeat rerum atque fuga, architecto vel.</p>
+    <p>Sed sapiente, maxime porro inventore neque odit aliquid iusto recusandae, illo accusamus iste necessitatibus natus voluptatibus tempore architecto ex rem laboriosam. Unde deleniti, eligendi rerum maxime quae facilis culpa consectetur?</p>
+    <p>Perspiciatis, vel repellat itaque nam dolores atque, debitis, sequi quam beatae nostrum numquam quisquam quia ab. Maxime ipsa deleniti ratione perspiciatis animi rem eos quisquam repellendus. Minima esse aut nam.</p>
+    <p>Est voluptate, fugiat eaque quibusdam accusantium dolor officiis enim ipsam unde neque doloribus iusto molestias assumenda, ad modi voluptates ab suscipit id ex ea. Repudiandae, nesciunt officia? Porro, laborum laboriosam.</p>
+    <p>Maiores reprehenderit autem beatae magni assumenda dicta mollitia quas maxime delectus vel! Reiciendis odio voluptatem adipisci labore nesciunt, omnis illum recusandae, dolore sit nam at iusto cum eum nemo possimus.</p>
+    <p>Aliquam fuga neque, porro non assumenda accusamus numquam repellendus vitae inventore iure laboriosam, deleniti minima sequi rerum repellat ex dolorem vero nobis molestiae quod voluptas? Minus qui ex ipsa fugit!</p>
+    <p>Eaque mollitia laudantium quisquam, modi quas repellat dignissimos ab culpa. Repudiandae soluta perspiciatis eligendi voluptatibus rerum, commodi quasi esse rem porro? Molestias nemo possimus dolorum ut repudiandae, tempora voluptate odio.</p>
+    <p>Tenetur autem fugiat blanditiis quas assumenda magnam voluptatem minima deleniti hic corrupti numquam tempore obcaecati aspernatur omnis nam laudantium quam aperiam sunt, quo esse reprehenderit. Sequi maiores doloribus labore cum.</p>
+    <p>Distinctio dignissimos nulla earum at iste quia neque delectus a quis voluptate eum voluptatum ducimus corrupti, minima eius exercitationem rem officiis qui hic. Facere saepe labore debitis delectus provident omnis.</p>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Formatiert alle p-Elemente innerhalb eines Div-Bereichs */
+        div p {
+            background-color: skyblue;
+        }
+
+        /* formatiert alle direkten P-Kindelemente vom div-Bereich */
+        div>p {
+            font-size: 16pt;
+        }
+
+        /* Formatiert alle p-Elemente welche auf einen Div-bereich folgen */
+        div~p{
+            background-color: lightpink;
+        }
+
+        /* Formatiert das 1. P-Element welches auf einen Div-Bereich folgt */
+        div + p{
+            background-color: lightgreen;
+        }
+
+
+        /* formatiert alle p-Geschwisterelemente */
+        p+p{
+            text-decoration: underline red 5px;
+        }
+        /* formatiert alle p-Elemente welche auf ein p-Element folgen */
+        p~p{ text-transform: uppercase;}
+
+    </style>
+</head>
+
+<body>
+    <!-- (p{Vor dem Div-Bereich})*5+div>(p{Im Div-Bereich})*5 -->
+    <p>Vor dem Div-Bereich</p>
+    <p>Vor dem Div-Bereich</p>
+    <p>Vor dem Div-Bereich</p>
+    <p>Vor dem Div-Bereich</p>
+    <p>Vor dem Div-Bereich</p>
+    <div>
+        <p>Im Div-Bereich</p>
+        <p>Im Div-Bereich</p>
+        <p>Im Div-Bereich</p>
+        <p>Im Div-Bereich</p>
+        <p>Im Div-Bereich</p>
+    </div>
+    <p>Nach dem Div-Bereich</p>
+    <p>Nach dem Div-Bereich</p>
+    <p>Nach dem Div-Bereich</p>
+    <p>Nach dem Div-Bereich</p>
+    <p>Nach dem Div-Bereich</p>
+</body>
+
+</html>

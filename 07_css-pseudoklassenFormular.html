@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input {
+            margin-bottom: 10px;
+        }
+
+        /* Formatiert alle Pflichteingabefelder */
+        input:required {
+            border: 3px solid red;
+        }
+
+        /* Formatiert alle optionalen Eingabefelder */
+        input:optional {
+            border: 3px solid green;
+        }
+
+       /* Formatiert alle leeren Eingabefelder */
+        input:empty {
+            background-color: lightgrey;
+        }
+      
+      
+        /* Formatiert alle gültigen Eingabefelder */
+        input:valid{
+            background-color: skyblue;
+        }
+
+       
+        /* Formatiert alle gültigen Eingabefelder */
+        input:invalid{
+            background-color: lightpink;
+        }
+
+         /* Formatiert das ausgewählte Eingabefeld */
+        input:focus {
+            background-color: yellow;
+        }
+
+        input[type="radio"]:checked{
+            width: 20px;
+            height: 20px;
+            accent-color: red;
+        }
+
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <input type="text" id="Vorname" placeholder="Vorname" required><br>
+        <input type="text" id="Nachname" placeholder="Nachname" required><br>
+        <input type="text" id="Strasse" placeholder="Strasse"><br>
+        <input type="text" id="Postleitzahl" placeholder="Postleitzahl"><br>
+        <input type="text" id="Ort" placeholder="Ort"><br>
+        <input type="radio" name="geschlecht" id="Mann"><label for="Mann">Mann</label>
+        <input type="radio" name="geschlecht" id="Frau"><label for="Frau">Frau</label>
+        <input type="radio" name="geschlecht" id="Inter"><label for="Inter">Inter</label>
+    
+    </form>
+</body>
+
+</html>

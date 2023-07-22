@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Einstieg</title>
+
+    <link rel="stylesheet" href="../css/a_formate.css">
+
+    <style>
+
+        /* CSS-Kommentar */
+
+        /* h1{background-color: #ff0000;}       	Hexcode */
+        /* h1{background-color: rgb(255,0,0);}      rgb */
+        /* h1{background-color: red;}               farbnamen */
+
+        /* Element-Formatierung */
+        h1,h2 {
+            color: blue;
+        }
+
+        /* Eine Klasse beginnt mit einem Punkt und kann beliebig oft verwendet werden. */
+        .schinagl, .huber {
+            font-family: Verdana;
+        }
+
+        /* Klasse für ein bestimmtes Element, die Klasse andereas ist nur für h1-Elemente gültig. */
+        h1.andreas {
+            color: gold;
+            background-color: maroon;
+        }
+
+        /* Eine ID bedinnt mit einer Raute und darf im gesamten Dokument nur einmal vorkommen. */
+        #peter{
+            /* Wenn eine Schriftart aus mehr als einem Wort besteh, muss diese in Anführungszeichen gesetzt werden. */
+            font-family: "Courier New"
+        }
+
+        .willi {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Inline-Style -->
+
+
+    <h1 style="color: red;">Einstieg in CSS</h1>
+    <h1>Einstieg in CSS</h1>
+
+    <!-- Anwenden der Klasse schinagl -->
+
+    <h1 class="schinagl">Einstieg in CSS</h1>
+    <h2 class="schinagl">Einstieg in CSS</h2>
+    <h1>Einstieg in CSS</h1>
+    <h2>Einstieg in CSS</h2>
+
+    <!-- Anwenden mehrer Klassen (andreas und willi, sowie der ID peter) -->
+    <h1 class="andreas willi" id="peter">Einstieg in CSS</h1>
+    <h1>Einstieg in CSS</h1>
+    <h2>Einstieg in CSS</h2>
+
+    <!-- .schinagl>lorem20                          erstellt einen Div-Bereich mit der Klasse schinagl und 20 Wörtern Lorem-Text. -->
+    <!-- p.schinagl                                 erstellt einen Absatz mit der Klasse Schinagl. -->
+    <!-- p.schinagl>lorem20                         erstellt einen Absatz mit der Klasse Schinagl und 20 Wörtern Lorem-Text. -->
+    <!-- h1.schinagl{Heute ist Dienstag}            erstellt ein h1-Element mit der Klasse Schinagl und dem Text 'Heute ist Dienstag'. -->
+    <!-- h1.schinagl.willi#peter                    erstellt ein h1-Element mit den Klassen Schinagl und willisowie der klasse peter. -->
+
+    
+</body>
+</html>
